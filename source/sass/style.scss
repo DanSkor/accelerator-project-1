@@ -3,8 +3,9 @@
 @import "./common/global.scss";
 @import "./common/variables.scss";
 @import "./common/visually-hidden.scss";
+@import "./vendor/normalize";
 
 // BLOCKS
-@import "./vendor/normalize";
+@import "./blocks/page.scss";
 @import "./blocks/about.scss";
 @import "./blocks/price.scss";
