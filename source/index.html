@@ -36,9 +36,9 @@
               <div class="hero__text-block">
                 <p class="hero__text-city">Омск</p>
                 <h1 class="hero__title">ФИТНЕС ЦЕНТР</h1>
-                <button class="hero__button button" type="button">Купить абонемент</button>
               </div>
             </div>
+            <button class="hero__button button" type="button">Купить абонемент</button>
             <picture>
               <source type="image/webp" media="(min-width: 1366px)" srcset="./img/hero-desc@1x.webp 1x, ./img/hero-desc@2x.webp 2x" width="500" height="524">
               <source type="image/webp" media="(min-width: 768px)" srcset="./img/hero-tab@1x.webp 1x, ./img/hero-tab@2x.webp 2x" width="324" height="390">
@@ -49,7 +49,6 @@
           </div>
         </div>
       </section>
-
       <section data-test="about">
         <div class="about__wrapper">
           <div class="about__text-block">
@@ -93,28 +92,29 @@
             <li class="price__card-item card">
               <h3 class="card__title">С тренером</h3>
               <p class="card__subtitle">12 занятий</p>
-              <p class="card__price">5000 <span class="card__price-span">₽</span></p>
+              <p class="card__price" data-price="5000">5000 <span class="card__price-span">₽</span></p>
               <a class="card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
             <li class="price__card-item card">
               <h3 class="card__title">Дневной</h3>
               <p class="card__subtitle">с 8:00 до 17:00</p>
-              <p class="card__price">1700 <span class="card__price-span">₽</span></p>
+              <p class="card__price" data-price="1700">1700 <span class="card__price-span">₽</span></p>
               <a class="card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
             <li class="price__card-item card">
               <h3 class="card__title">Полный день</h3>
               <p class="card__subtitle">с 8:00 до 22:00</p>
-              <p class="card__price">2700 <span class="card__price-span">₽</span></p>
+              <p class="card__price" data-price="2700">2700 <span class="card__price-span">₽</span></p>
               <a class="card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
           </ul>
         </div>
       </section>
+
       <article class="games" data-test="games">
         <div class="games__wrapper">
           <div class="games__content">
-            <h2 class="games__title">SUPER GAMES</h2>
+            <h2 class="games__title">Super games</h2>
             <div class="games__date-wrapper">
               <p class="games__date-title">Дата</p>
               <div class="games__month-year">

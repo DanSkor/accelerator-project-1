@@ -1,0 +1,50 @@
+.card {
+  min-height: 384px;
+  padding: 50px 42px;
+  background-color: #ffffff;
+}
+
+.card__title {
+  font-family: $roboto-condensed-bold;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  margin: 0 0 18px;
+}
+
+.card__subtitle {
+  margin: 0 0 88px;
+}
+
+.card__price {
+  position: relative;
+  font-family: $roboto-condensed-bold;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+  text-align: center;
+  color: $price;
+  z-index: 5;
+  margin: 0 0 18px;
+
+  &::after {
+    position: absolute;
+    content: attr(data-price);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 206px;
+    height: 120px;
+    font-family: $roboto-condensed-bold;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 150%;
+    text-align: center;
+    color: $price-shadow;
+    z-index: -1;
+  }
+}
+
+.card__price-span {
+  color: #102654;
+}

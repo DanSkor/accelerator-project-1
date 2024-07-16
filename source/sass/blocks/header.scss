@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 0;
+}
+
+.header__phone {
+  font-family: $roboto-condensed-bold;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  color: #ffffff;
+  text-decoration: none;
+}

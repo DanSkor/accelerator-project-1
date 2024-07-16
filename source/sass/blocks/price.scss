@@ -1,4 +1,6 @@
 .price {
+  text-align: center;
+  background-color: $primary-bg;
   background-repeat: no-repeat;
   background-position: bottom right;
 
@@ -21,4 +23,63 @@
         url("../../img/plates-desc@2x.png") type("image/png") 2x
       );
   }
+}
+
+.price__wrapper {
+  margin: 0 auto;
+  padding: 40px 15px;
+}
+
+.price__title {
+  margin: 0 0 30px;
+}
+
+.price__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.price__button {
+  display: flex;
+  min-height: 26px;
+  font-family: $roboto-condensed-regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  background-color: transparent;
+  color: $light;
+  border: none;
+  cursor: pointer;
+}
+
+.price__item--current {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 100%;
+    background-color: #d10a42;
+  }
+}
+
+.price__item--current .price__button {
+  color: #102654;
+}
+
+.price__card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
