@@ -1,0 +1,19 @@
+.faq {
+  background-color: $primary-bg;
+}
+
+.faq__wrapper {
+  padding: 70px 15px;
+  margin: 0 auto;
+}
+
+.faq__title {
+  text-align: center;
+  margin: 35px;
+}
+
+.faq__content {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}

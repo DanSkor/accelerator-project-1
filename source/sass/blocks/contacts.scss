@@ -1,0 +1,44 @@
+.contacts__wrapper {
+  margin: 0 auto;
+  padding: 40px 15px;
+}
+
+.contacts__title {
+  margin: 0 0 42px;
+}
+
+.contacts__content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contacts__address {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  font-style: normal;
+}
+
+.contacts__subtitle {
+  font-family: $roboto-condensed-regular;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  margin: 0 0 12px;
+}
+
+.contacts__desc {
+  margin: 0;
+}
+
+.contacts__tel,
+.contscts__mail {
+  display: block;
+  font-family: $roboto-condensed-regular;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #102654;
+  text-decoration: none;
+}

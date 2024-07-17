@@ -1,0 +1,28 @@
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs__button {
+  width: 100%;
+  font-family: $roboto-condensed-regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  background-color: transparent;
+  color: #102654;
+  border: 1px solid $tab-border;
+  padding: 14px;
+  cursor: pointer;
+
+  &--current {
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    color: #ffffff;
+    border: none;
+  }
+}

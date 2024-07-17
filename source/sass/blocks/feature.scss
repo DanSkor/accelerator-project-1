@@ -1,0 +1,62 @@
+.feature {
+  padding: 0 15px;
+
+  &--secondary {
+    background-color: $btn-border;
+    color: #ffffff;
+    margin: 5px 0;
+    padding: 30px 75px 40px;
+  }
+}
+
+.feature__value p {
+  font-family: $roboto-condensed-bold;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  background: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+
+.feature--secondary .feature__value p {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.feature__value span {
+  font-family: $roboto-condensed-regular;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $desc;
+  margin: 0 0 12px;
+}
+
+.feature--secondary .feature__value span {
+  color: #ffffff;
+  margin: 0 0 20px;
+  font-family: $roboto-condensed-bold;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+}
+
+.feature__text h3 {
+  font-family: $roboto-condensed-regular;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 111%;
+  margin: 0 0 12px;
+}
+
+.feature__text p {
+  margin: 0;
+  padding: 0 30px;
+}
+
+.feature--secondary .feature__text p {
+  padding: 0;
+}

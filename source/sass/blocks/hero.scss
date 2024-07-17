@@ -23,9 +23,11 @@
 }
 
 .hero__content-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   font-family: $roboto-condensed-regular;
   font-weight: 400;
-  text-align: right;
   width: 115px;
   margin: 0;
   padding: 0;
@@ -33,6 +35,7 @@
 }
 
 .hero__content-item {
+  line-height: 143%;
   width: max-content;
 }
 
@@ -55,6 +58,7 @@
 }
 
 .hero__title {
+  width: 156px;
   font-family: $alumni-sans-extrabold;
   font-weight: 800;
   font-size: 62px;
@@ -62,4 +66,8 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   margin: 0;
+}
+
+.hero__image {
+  display: none;
 }

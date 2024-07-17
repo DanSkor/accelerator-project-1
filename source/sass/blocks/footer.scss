@@ -1,0 +1,16 @@
+.footer {
+  background-color: $dark;
+  color: #ffffff;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 40px 15px;
+}
+
+.footer__logo {
+  display: block;
+}
