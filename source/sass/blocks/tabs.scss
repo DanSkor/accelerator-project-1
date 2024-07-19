@@ -5,6 +5,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .tabs__button {
@@ -21,8 +25,13 @@
   cursor: pointer;
 
   &--current {
+    padding: 15px;
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     color: #ffffff;
     border: none;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
   }
 }

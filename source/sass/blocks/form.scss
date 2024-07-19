@@ -6,16 +6,30 @@
 .form__wrapper {
   margin: 0 auto;
   padding: 70px 15px;
+
+  @media (min-width: $tablet) {
+    padding: 60px 164px;
+  }
 }
 
 .form__title {
   margin: 0 0 36px;
+
+  @media (min-width: $tablet) {
+    text-align: center;
+  }
 }
 
 .form__content {
   display: flex;
   flex-direction: column;
   gap: 36px;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px 30px;
+  }
 }
 
 .form__input {
@@ -32,5 +46,21 @@
     font-family: $roboto-condensed-light;
     font-weight: 300;
     opacity: 0.4;
+  }
+
+  @media (min-width: $tablet) {
+    font-family: $roboto-condensed-regular;
+    font-weight: 400;
+
+    &::placeholder {
+      font-family: $roboto-condensed-regular;
+      font-weight: 400;
+    }
+  }
+}
+
+.form__button {
+  @media (min-width: $tablet) {
+    grid-column: 1/3;
   }
 }

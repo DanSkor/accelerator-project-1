@@ -7,6 +7,24 @@
     margin: 5px 0;
     padding: 30px 75px 40px;
   }
+
+  @media (min-width: $tablet) {
+    width: 324px;
+    display: flex;
+    text-align: left;
+    gap: 14px;
+    padding: 0;
+
+    &--secondary {
+      flex-direction: column;
+      gap: 25px;
+      grid-column: 1/3;
+      justify-self: center;
+      text-align: center;
+      padding: 35px;
+      margin: 0;
+    }
+  }
 }
 
 .feature__value p {
@@ -18,11 +36,15 @@
   background-clip: text;
   color: transparent;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 70px;
+  }
 }
 
 .feature--secondary .feature__value p {
   color: #ffffff;
-  margin: 0 0 5px;
+  margin: 0 0 25px;
 }
 
 .feature__value span {
@@ -33,6 +55,11 @@
   line-height: 143%;
   color: $desc;
   margin: 0 0 12px;
+
+  @media (min-width: $tablet) {
+    line-height: 157%;
+    margin: 0;
+  }
 }
 
 .feature--secondary .feature__value span {
@@ -42,6 +69,11 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 100%;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    margin: 0;
+  }
 }
 
 .feature__text h3 {
@@ -50,13 +82,27 @@
   font-size: 18px;
   line-height: 111%;
   margin: 0 0 12px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 100%;
+  }
 }
 
 .feature__text p {
   margin: 0;
   padding: 0 30px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
 }
 
 .feature--secondary .feature__text p {
   padding: 0;
+
+  @media (min-width: $tablet) {
+    width: 250px;
+    margin: 0 auto;
+  }
 }

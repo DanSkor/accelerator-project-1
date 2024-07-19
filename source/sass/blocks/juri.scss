@@ -6,10 +6,32 @@
   margin: 0 auto;
   padding: 40px 30px;
   overflow: hidden;
+
+  @media (min-width: $tablet) {
+    margin: 30px 104px 60px;
+    padding: 0;
+    overflow: visible;
+  }
 }
 
 .juri__title {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 46px;
+  }
+}
+
+.juri__slider {
+  @media (min-width: $tablet) {
+    position: relative;
+  }
+}
+
+.juri__slider-wrapper {
+  @media (min-width: $tablet) {
+    overflow: hidden;
+  }
 }
 
 .juri__button {
@@ -21,8 +43,22 @@
   mask-image: url("/__spritemap#sprite-slider-arrow-view");
   cursor: pointer;
 
-  &--next {
-    transform: rotate(180deg);
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 50%;
+    left: -37px;
+    transform: translateY(-50%);
+    display: block;
+  }
+}
+
+.juri__button--next {
+  transform: rotate(180deg);
+
+  @media (min-width: $tablet) {
+    left: auto;
+    right: -37px;
+    transform: translateY(-50%) rotate(180deg);
   }
 }
 
@@ -34,4 +70,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    height: 300px;
+  }
 }

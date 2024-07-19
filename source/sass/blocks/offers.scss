@@ -1,26 +1,48 @@
 .offers {
   text-align: center;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
 }
 
 .offers__wrapper {
   padding: 40px 0;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    padding: 60px 45px;
+  }
 }
 
 .offers__title {
   margin: 0 0 40px;
+
+  @media (min-width: $tablet) {
+    text-align: center;
+  }
 }
 
 .offers__main {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    margin-bottom: 35px;
+  }
 }
 
 .offers__main-content {
   background-color: $play-btn;
   color: #ffffff;
   padding: 30px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    min-height: 402px;
+  }
 }
 
 .offers__main-content h3 {
@@ -29,6 +51,11 @@
   font-size: 22px;
   line-height: 100%;
   margin: 0 0 9px;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    margin: 0 0 20px;
+  }
 }
 
 .offers__main-content span {
@@ -38,12 +65,34 @@
   font-size: 64px;
   line-height: 100%;
   margin: 0 0 28px;
+
+  @media (min-width: $tablet) {
+    font-size: 70px;
+    margin: 0 0 40px;
+  }
 }
 
 .offers__main-content p {
   font-size: 16px;
   line-height: 125%;
   margin: 0 0 28px;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 133%;
+  }
+}
+
+.offers__image {
+  display: block;
+}
+
+.offers__main-link {
+  @media (min-width: $tablet) {
+    position: absolute;
+    bottom: 40px;
+    left: 25px;
+  }
 }
 
 .offers__list {
@@ -54,6 +103,12 @@
   margin: 0;
   padding: 0 15px;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    gap: 30px;
+    padding: 0;
+  }
 }
 
 .offers__item {
@@ -74,6 +129,11 @@
     z-index: -1;
     margin: -7px;
   }
+
+  @media (min-width: $tablet) {
+    position: relative;
+    width: 324px;
+  }
 }
 
 .offers__item h3 {
@@ -82,8 +142,27 @@
   font-size: 22px;
   line-height: 100%;
   margin: 0 0 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 26px;
+    margin: 0 0 10px;
+  }
 }
 
 .offers__item p {
   margin: 0 0 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0 0 30px;
+  }
+}
+
+.offers__item-link {
+  @media (min-width: $tablet) {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+  }
 }

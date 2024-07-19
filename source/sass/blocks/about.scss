@@ -1,6 +1,16 @@
 .about__wrapper {
   margin: 0 auto;
   padding: 40px 0;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    text-align: center;
+    padding: 60px 45px 120px;
+  }
+
+  @media (min-width: $desctop) {
+    text-align: start;
+  }
 }
 
 .about__text-block {
@@ -9,6 +19,14 @@
 
 .about__title {
   margin-bottom: 12px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desctop) {
+    margin-bottom: 25px;
+  }
 }
 
 .about__subtitle {
@@ -17,10 +35,20 @@
   font-size: 18px;
   line-height: 111%;
   margin: 0 0 36px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 100%;
+  }
 }
 
 .about__desc {
   margin: 0 0 36px;
+
+  @media (min-width: $tablet) {
+    width: 502px;
+    margin: 0 auto 36px;
+  }
 }
 
 .about__desc-extra {
@@ -30,6 +58,10 @@
 .about__image {
   display: block;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .about__video {
@@ -45,6 +77,11 @@
     );
 
   @media (min-width: $tablet) {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
     width: 270px;
   }
 

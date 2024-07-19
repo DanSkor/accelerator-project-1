@@ -5,15 +5,27 @@
 .faq__wrapper {
   padding: 70px 15px;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    padding: 60px 45px;
+  }
 }
 
 .faq__title {
   text-align: center;
-  margin: 35px;
+  margin: 0 0 35px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 45px;
+  }
 }
 
 .faq__content {
   display: flex;
   flex-direction: column;
   gap: 35px;
+
+  @media (min-width: $tablet) {
+    gap: 45px;
+  }
 }

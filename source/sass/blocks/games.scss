@@ -1,5 +1,10 @@
 .games__wrapper {
   padding: 25px 15px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    padding: 60px 45px;
+  }
 }
 
 .games__content {
@@ -10,6 +15,11 @@
   background-color: $play-btn;
   color: #ffffff;
   padding: 40px;
+
+  @media (min-width: $tablet) {
+    width: 300px;
+    row-gap: 10px;
+  }
 }
 
 .games__date-wrapper {
@@ -17,6 +27,10 @@
   flex-direction: column;
   gap: 5px;
   width: 56px;
+
+  @media (min-width: $tablet) {
+    gap: 4px;
+  }
 }
 
 .games__title {
@@ -51,6 +65,11 @@
   font-size: 16px;
   line-height: 125%;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 133%;
+  }
 }
 
 .games__link {
@@ -74,6 +93,15 @@
     height: 1px;
     background-color: #ffffff;
   }
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 133%;
+
+    @media (min-width: $tablet) {
+      bottom: -1px;
+    }
+  }
 }
 
 .games__month-span,
@@ -82,4 +110,13 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 157%;
+  }
+}
+
+.games__image {
+  display: block;
 }

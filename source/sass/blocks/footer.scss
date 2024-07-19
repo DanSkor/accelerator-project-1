@@ -9,6 +9,14 @@
   gap: 30px;
   margin: 0 auto;
   padding: 40px 15px;
+
+  @media (min-width: $tablet) {
+    padding: 45px;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .footer__logo {

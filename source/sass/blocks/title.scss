@@ -4,4 +4,12 @@
   font-size: 32px;
   line-height: 100%;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 42px;
+  }
+
+  @media (min-width: $desctop) {
+    font-size: 54px;
+  }
 }

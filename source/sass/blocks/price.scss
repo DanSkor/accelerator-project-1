@@ -12,6 +12,7 @@
         url("../../img/plates-tab@1x.png") type("image/png") 1x,
         url("../../img/plates-tab@2x.png") type("image/png") 2x
       );
+    background-position: bottom -40px right -80px;
   }
 
   @media (min-width: $desctop) {
@@ -28,10 +29,18 @@
 .price__wrapper {
   margin: 0 auto;
   padding: 40px 15px;
+
+  @media (min-width: $tablet) {
+    padding: 60px 45px;
+  }
 }
 
 .price__title {
   margin: 0 0 30px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 35px;
+  }
 }
 
 .price__list {
@@ -42,6 +51,11 @@
   padding: 0;
   list-style: none;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+  @media (min-width: $tablet) {
+    width: 310px;
+    margin: 0 auto 45px;
+  }
 }
 
 .price__button {
@@ -55,6 +69,10 @@
   color: $light;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+  }
 }
 
 .price__item--current {
@@ -77,9 +95,14 @@
 
 .price__card-list {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 35px;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    gap: 40px;
+  }
 }

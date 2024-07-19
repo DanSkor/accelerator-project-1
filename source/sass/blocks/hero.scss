@@ -6,6 +6,14 @@
 .hero__wrapper {
   margin: 0 auto;
   padding: 0 15px;
+
+  @media (min-width: $tablet) {
+    padding: 0 45px;
+  }
+
+  @media (min-width: $desctop) {
+    padding: 0 103px;
+  }
 }
 
 .hero__content {
@@ -13,13 +21,38 @@
   // grid-template-columns: 113px 156px;
   // justify-content: space-between;
   padding: 48px 0 32px;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    padding: 0 0 100px;
+  }
+
+  @media (min-width: $desctop) {
+    padding: 30px 0 120px;
+    gap: 56px;
+  }
 }
 
 .hero__content-wrapper {
-  display: flex;
+  display: grid;
+  align-items: end;
+  row-gap: 48px;
   justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 48px;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+  }
+
+  @media (min-width: $desctop) {
+    row-gap: 40px;
+  }
 }
 
 .hero__content-list {
@@ -28,20 +61,41 @@
   align-items: flex-end;
   font-family: $roboto-condensed-regular;
   font-weight: 400;
+  line-height: 143%;
   width: 115px;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 157%;
+  }
+
+  @media (min-width: $desctop) {
+    justify-self: end;
+    grid-row: 1/3;
+    align-self: center;
+  }
 }
 
 .hero__content-item {
-  line-height: 143%;
   width: max-content;
 }
 
 .hero__button {
   // grid-column: 1/3;
   width: 100%;
+  grid-column: 1/3;
+
+  @media (min-width: $tablet) {
+    grid-column: 2/3;
+    padding: 22px;
+  }
+
+  @media (min-width: $desctop) {
+    padding: 27px;
+  }
 }
 
 .hero__text-block {
@@ -55,6 +109,16 @@
   font-size: 32px;
   line-height: 100%;
   margin: 0 0 14px;
+
+  @media (min-width: $tablet) {
+    font-size: 42px;
+    margin: 0 0 10px;
+  }
+
+  @media (min-width: $desctop) {
+    font-size: 54px;
+    margin: 0 0 40px;
+  }
 }
 
 .hero__title {
@@ -66,8 +130,25 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    font-size: 72px;
+    line-height: 118%;
+    letter-spacing: 0.03em;
+  }
+
+  @media (min-width: $desctop) {
+    font-size: 92px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+  }
 }
 
 .hero__image {
   display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
 }

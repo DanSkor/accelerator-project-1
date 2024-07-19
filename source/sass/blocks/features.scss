@@ -6,10 +6,18 @@
 .features__wrapper {
   margin: 0 auto;
   padding: 40px 0;
+
+  @media (min-width: $tablet) {
+    padding: 65px 45px;
+  }
 }
 
 .features__title {
   margin: 0 0 40px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 50px;
+  }
 }
 
 .features__list {
@@ -19,4 +27,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    justify-content: center;
+    gap: 40px 30px;
+  }
 }

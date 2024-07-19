@@ -2,6 +2,10 @@
   min-height: 384px;
   padding: 50px 42px;
   background-color: #ffffff;
+
+  @media (min-width: $tablet) {
+    width: 380px;
+  }
 }
 
 .card__title {
@@ -10,10 +14,20 @@
   font-size: 22px;
   line-height: 100%;
   margin: 0 0 18px;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    margin: 0 0 22px;
+  }
 }
 
 .card__subtitle {
   margin: 0 0 88px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 
 .card__price {
@@ -42,6 +56,18 @@
     text-align: center;
     color: $price-shadow;
     z-index: -1;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 150%;
+    margin: 0 0 22px;
+
+    &::after {
+      font-size: 100px;
+      width: 250px;
+      height: 150px;
+    }
   }
 }
 

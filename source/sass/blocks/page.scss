@@ -15,4 +15,9 @@
   margin: 0 auto;
   min-height: 100vh;
   min-width: 320px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
