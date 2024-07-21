@@ -1,10 +1,15 @@
 .card {
+  box-sizing: border-box;
   min-height: 384px;
   padding: 50px 42px;
   background-color: #ffffff;
 
   @media (min-width: $tablet) {
     width: 380px;
+  }
+
+  @media (min-width: $desctop) {
+    width: 360px;
   }
 }
 
@@ -18,6 +23,11 @@
   @media (min-width: $tablet) {
     font-size: 24px;
     margin: 0 0 22px;
+  }
+
+  @media (min-width: $desctop) {
+    font-size: 26px;
+    margin: 0 0 17px;
   }
 }
 

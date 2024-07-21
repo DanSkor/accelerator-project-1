@@ -9,6 +9,10 @@
   @media (min-width: $tablet) {
     gap: 30px;
   }
+
+  @media (min-width: $desctop) {
+    gap: 82px;
+  }
 }
 
 .nav__link {

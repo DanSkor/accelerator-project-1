@@ -5,6 +5,10 @@
     display: flex;
     padding: 60px 45px;
   }
+
+  @media (min-width: $desctop) {
+    padding: 100px 103px;
+  }
 }
 
 .games__content {
@@ -17,8 +21,16 @@
   padding: 40px;
 
   @media (min-width: $tablet) {
+    grid-template-columns: 100px 100px;
     width: 300px;
     row-gap: 10px;
+  }
+
+  @media (min-width: $desctop) {
+    width: 500px;
+    grid-template-columns: 168px 95px;
+    padding: 60px 80px 98px;
+    row-gap: 30px;
   }
 }
 
@@ -30,6 +42,11 @@
 
   @media (min-width: $tablet) {
     gap: 4px;
+    width: auto;
+  }
+
+  @media (min-width: $desctop) {
+    gap: 12px;
   }
 }
 
@@ -41,6 +58,12 @@
   text-transform: uppercase;
   width: 117px;
   margin: 0;
+
+  @media (min-width: $desctop) {
+    width: auto;
+    font-size: 82px;
+    line-height: 117%;
+  }
 }
 
 .games__month-year {
@@ -56,6 +79,10 @@
   font-size: 24px;
   line-height: 100%;
   margin: 0;
+
+  @media (min-width: $desctop) {
+    font-size: 40px;
+  }
 }
 
 .games__desc {
@@ -98,8 +125,14 @@
     font-size: 18px;
     line-height: 133%;
 
-    @media (min-width: $tablet) {
+    &::after {
       bottom: -1px;
+    }
+  }
+
+  @media (min-width: $desctop) {
+    &::after {
+      bottom: -6px;
     }
   }
 }

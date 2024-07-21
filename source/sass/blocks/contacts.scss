@@ -5,6 +5,10 @@
   @media (min-width: $tablet) {
     padding: 60px 45px;
   }
+
+  @media (min-width: $desctop) {
+    padding: 60px 103px;
+  }
 }
 
 .contacts__title {
@@ -25,6 +29,10 @@
     flex-direction: row;
     justify-content: center;
     gap: 60px;
+  }
+
+  @media (min-width: $desctop) {
+    gap: 120px;
   }
 }
 
@@ -52,6 +60,12 @@
       width: 1px;
       height: 100%;
       background-color: $divider;
+    }
+  }
+
+  @media (min-width: $desctop) {
+    &::after {
+      right: -60px;
     }
   }
 }

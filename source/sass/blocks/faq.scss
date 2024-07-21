@@ -9,6 +9,10 @@
   @media (min-width: $tablet) {
     padding: 60px 45px;
   }
+
+  @media (min-width: $desctop) {
+    padding: 100px 103px;
+  }
 }
 
 .faq__title {
@@ -17,6 +21,11 @@
 
   @media (min-width: $tablet) {
     margin: 0 0 45px;
+  }
+
+  @media (min-width: $desctop) {
+    text-align: start;
+    margin: 0 0 50px;
   }
 }
 
@@ -27,5 +36,10 @@
 
   @media (min-width: $tablet) {
     gap: 45px;
+  }
+
+  @media (min-width: $desctop) {
+    display: grid;
+    grid-template-columns: 260px 860px;
   }
 }

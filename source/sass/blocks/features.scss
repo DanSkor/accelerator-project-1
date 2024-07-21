@@ -10,6 +10,10 @@
   @media (min-width: $tablet) {
     padding: 65px 45px;
   }
+
+  @media (min-width: $desctop) {
+    padding: 100px 103px;
+  }
 }
 
 .features__title {
@@ -33,5 +37,10 @@
     grid-template-columns: 324px 324px;
     justify-content: center;
     gap: 40px 30px;
+  }
+
+  @media (min-width: $desctop) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px 40px;
   }
 }

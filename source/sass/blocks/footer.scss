@@ -17,6 +17,10 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (min-width: $desctop) {
+    padding: 40px 103px;
+  }
 }
 
 .footer__logo {

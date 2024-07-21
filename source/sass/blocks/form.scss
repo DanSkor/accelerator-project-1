@@ -3,12 +3,23 @@
   color: #ffffff;
 }
 
+.form__contacts {
+  @media (min-width: $desctop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .form__wrapper {
   margin: 0 auto;
   padding: 70px 15px;
 
   @media (min-width: $tablet) {
     padding: 60px 164px;
+  }
+
+  @media (min-width: $desctop) {
+    padding: 60px 103px;
   }
 }
 

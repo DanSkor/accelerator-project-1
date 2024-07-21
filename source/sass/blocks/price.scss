@@ -23,6 +23,7 @@
         url("../../img/plates-desc@1x.png") type("image/png") 1x,
         url("../../img/plates-desc@2x.png") type("image/png") 2x
       );
+    background-position: bottom -40px right -164px;
   }
 }
 
@@ -33,6 +34,10 @@
   @media (min-width: $tablet) {
     padding: 60px 45px;
   }
+
+  @media (min-width: $desctop) {
+    padding: 100px 103px;
+  }
 }
 
 .price__title {
@@ -40,6 +45,10 @@
 
   @media (min-width: $tablet) {
     margin: 0 0 35px;
+  }
+
+  @media (min-width: $desctop) {
+    margin: 20px;
   }
 }
 
@@ -55,6 +64,11 @@
   @media (min-width: $tablet) {
     width: 310px;
     margin: 0 auto 45px;
+  }
+
+  @media (min-width: $desctop) {
+    width: 350px;
+    margin: 0 auto 40px;
   }
 }
 
@@ -72,6 +86,10 @@
 
   @media (min-width: $tablet) {
     font-size: 18px;
+  }
+
+  @media (min-width: $desctop) {
+    font-size: 20px;
   }
 }
 
@@ -104,5 +122,10 @@
 
   @media (min-width: $tablet) {
     gap: 40px;
+  }
+
+  @media (min-width: $desctop) {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

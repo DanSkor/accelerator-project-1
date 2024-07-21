@@ -9,6 +9,11 @@
   @media (min-width: $tablet) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  @media (min-width: $desctop) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .tabs__button {
@@ -33,5 +38,10 @@
 
   @media (min-width: $tablet) {
     font-size: 18px;
+    padding: 18px;
+
+    &--current {
+      padding: 19px;
+    }
   }
 }

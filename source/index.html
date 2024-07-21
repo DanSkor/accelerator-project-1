@@ -349,34 +349,36 @@
       <section class="offers" data-test="offers">
         <div class="offers__wrapper">
           <h2 class="offers__title title">Акции</h2>
-          <div class="offers__main">
-            <div class="offers__main-content">
-              <h3>Год</h3>
-              <span>4999</span>
-              <p>Безлимитный абонемент в тренажёрный зал</p>
-              <a class="offers__main-link link" href="#">Подробнее</a>
+          <div class="offers__content-wrapper">
+            <div class="offers__main">
+              <div class="offers__main-content">
+                <h3>Год</h3>
+                <span>4999</span>
+                <p>Безлимитный абонемент в тренажёрный зал</p>
+                <a class="offers__main-link link" href="#">Подробнее</a>
+              </div>
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)" srcset="./img/offers-desc@1x.webp 1x, ./img/offers-desc@2x.webp 2x" width="280" height="460">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/offers-tab@1x.webp 1x, ./img/offers-tab@2x.webp 2x" width="400" height="462">
+                <source type="image/webp" srcset="./img/games-mob@1x.webp 1x, ./img/offers-mob@2x.webp 2x" width="320" height="360">
+                <source type="image/jpg" media="(min-width: 1366px)" srcset="./img/offers-desc@1x.jpg 1x, ./img/offers-desc@2x.jpg 2x" width="280" height="460">
+                <source type="image/jpg" media="(min-width: 768px)" srcset="./img/offers-tab@1x.jpg 1x, ./img/offers-tab@2x.jpg 2x" width="400" height="462">
+                <img class="offers__image" src="./img/offers-mob@1x.jpg" srcset="./img/offers-mob@2x.jpg 2x" alt="Фотография спортивной девушки." width="320" height="360">
+              </picture>
             </div>
-            <picture>
-              <source type="image/webp" media="(min-width: 1366px)" srcset="./img/offers-desc@1x.webp 1x, ./img/offers-desc@2x.webp 2x" width="280" height="460">
-              <source type="image/webp" media="(min-width: 768px)" srcset="./img/offers-tab@1x.webp 1x, ./img/offers-tab@2x.webp 2x" width="400" height="462">
-              <source type="image/webp" srcset="./img/games-mob@1x.webp 1x, ./img/offers-mob@2x.webp 2x" width="320" height="360">
-              <source type="image/jpg" media="(min-width: 1366px)" srcset="./img/offers-desc@1x.jpg 1x, ./img/offers-desc@2x.jpg 2x" width="280" height="460">
-              <source type="image/jpg" media="(min-width: 768px)" srcset="./img/offers-tab@1x.jpg 1x, ./img/offers-tab@2x.jpg 2x" width="400" height="462">
-              <img class="offers__image" src="./img/offers-mob@1x.jpg" srcset="./img/offers-mob@2x.jpg 2x" alt="Фотография спортивной девушки." width="320" height="360">
-            </picture>
+            <ul class="offers__list">
+              <li class="offers__item">
+                <h3>Месяц бесплатно</h3>
+                <p>Приведи друга, получи абонемент в подарок</p>
+                <a class="offers__item-link link link--secondary" href="#">Подробнее</a>
+              </li>
+              <li class="offers__item">
+                <h3>Скидка 20%</h3>
+                <p>Корпоративный фитнес с командой</p>
+                <a class="offers__item-link link link--secondary" href="#">Подробнее</a>
+              </li>
+            </ul>
           </div>
-          <ul class="offers__list">
-            <li class="offers__item">
-              <h3>Месяц бесплатно</h3>
-              <p>Приведи друга, получи абонемент в подарок</p>
-              <a class="offers__item-link link link--secondary" href="#">Подробнее</a>
-            </li>
-            <li class="offers__item">
-              <h3>Скидка 20%</h3>
-              <p>Корпоративный фитнес с командой</p>
-              <a class="offers__item-link link link--secondary" href="#">Подробнее</a>
-            </li>
-          </ul>
         </div>
       </section>
       <section class="faq" data-test="faq">
@@ -477,7 +479,7 @@
         </div>
         </div>
       </section>
-      <div class="form-contacts" data-test="form">
+      <div class="form__contacts" data-test="form">
         <section class="form">
           <div class="form__wrapper">
             <h2 class="form__title title">Бесплатное занятие</h2>

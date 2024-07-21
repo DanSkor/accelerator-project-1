@@ -37,6 +37,10 @@
     width: 500px;
     font-size: 22px;
   }
+
+  @media (min-width: $desctop) {
+    font-size: 24px;
+  }
 }
 
 .accordions__item p {
@@ -51,6 +55,11 @@
     font-size: 18px;
     line-height: 133%;
     margin: 10px 0 0;
+  }
+
+  @media (min-width: $desctop) {
+    width: 660px;
+    margin: 23px 0 0;
   }
 }
 

@@ -9,6 +9,10 @@
   @media (min-width: $tablet) {
     gap: 15px;
   }
+
+  @media (min-width: $desctop) {
+    gap: 10px;
+  }
 }
 
 .social__link {
