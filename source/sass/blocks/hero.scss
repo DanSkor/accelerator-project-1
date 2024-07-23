@@ -17,10 +17,7 @@
 }
 
 .hero__content {
-  // display: grid;
-  // grid-template-columns: 113px 156px;
-  // justify-content: space-between;
-  padding: 48px 0 32px;
+  padding: 44px 0 32px;
 
   @media (min-width: $tablet) {
     display: grid;
@@ -31,6 +28,9 @@
   }
 
   @media (min-width: $desctop) {
+    grid-template-columns: 385px 500px;
+    justify-content: center;
+    transform: translateX(37px);
     padding: 30px 0 120px;
     gap: 56px;
   }
@@ -46,12 +46,14 @@
   @media (min-width: $tablet) {
     display: grid;
     justify-content: space-between;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 113px 185px;
     row-gap: 50px;
   }
 
   @media (min-width: $desctop) {
-    row-gap: 40px;
+    grid-template-columns: 115px 270px;
+    justify-content: end;
+    row-gap: 35px;
   }
 }
 
@@ -63,19 +65,21 @@
   font-weight: 400;
   line-height: 143%;
   width: 115px;
-  margin: 0;
+  margin: 0 0 0 -2px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet) {
+    grid-row: 1/3;
+    align-self: center;
     font-size: 14px;
     line-height: 157%;
+    margin: 0 0 0 -2px;
   }
 
   @media (min-width: $desctop) {
     justify-self: end;
-    grid-row: 1/3;
-    align-self: center;
+    margin: -4px 0 0;
   }
 }
 
@@ -84,23 +88,25 @@
 }
 
 .hero__button {
-  // grid-column: 1/3;
   width: 100%;
   grid-column: 1/3;
 
   @media (min-width: $tablet) {
     grid-column: 2/3;
-    padding: 22px;
+    padding: 20px;
   }
 
   @media (min-width: $desctop) {
-    padding: 27px;
+    padding: 25px;
   }
 }
 
 .hero__text-block {
-  // grid-column: 2/3;
   text-align: right;
+
+  @media (min-width: $desctop) {
+    transform: translateY(-4px);
+  }
 }
 
 .hero__text-city {
@@ -129,19 +135,34 @@
   line-height: 100%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 -1px 0 0;
 
   @media (min-width: $tablet) {
     width: auto;
     font-size: 72px;
     line-height: 118%;
     letter-spacing: 0.03em;
+    margin: 0;
+    transform: translateX(1px);
   }
 
   @media (min-width: $desctop) {
     font-size: 92px;
     line-height: 120%;
     letter-spacing: 0.04em;
+    transform: translateX(-1px);
+  }
+}
+
+.hero__title span {
+  @media (min-width: $tablet) {
+    display: block;
+    transform: translateX(1px);
+  }
+
+  @media (min-width: $desctop) {
+    display: inline-block;
+    transform: none;
   }
 }
 
@@ -150,5 +171,9 @@
 
   @media (min-width: $tablet) {
     display: block;
+  }
+
+  @media (min-width: $tablet) {
+    transform: translateY(-3px);
   }
 }

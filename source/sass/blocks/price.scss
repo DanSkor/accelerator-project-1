@@ -12,7 +12,7 @@
         url("../../img/plates-tab@1x.png") type("image/png") 1x,
         url("../../img/plates-tab@2x.png") type("image/png") 2x
       );
-    background-position: bottom -40px right -80px;
+    background-position: bottom -35px right -78px;
   }
 
   @media (min-width: $desctop) {
@@ -23,7 +23,7 @@
         url("../../img/plates-desc@1x.png") type("image/png") 1x,
         url("../../img/plates-desc@2x.png") type("image/png") 2x
       );
-    background-position: bottom -40px right -164px;
+    background-position: bottom -68px right -167px;
   }
 }
 
@@ -36,7 +36,7 @@
   }
 
   @media (min-width: $desctop) {
-    padding: 100px 103px;
+    padding: 80px 103px 102px;
   }
 }
 
@@ -44,7 +44,7 @@
   margin: 0 0 30px;
 
   @media (min-width: $tablet) {
-    margin: 0 0 35px;
+    margin: 0 0 36px;
   }
 
   @media (min-width: $desctop) {
@@ -69,12 +69,13 @@
   @media (min-width: $desctop) {
     width: 350px;
     margin: 0 auto 40px;
+    padding-bottom: 3px;
   }
 }
 
 .price__button {
   display: flex;
-  min-height: 26px;
+  min-height: 24px;
   font-family: $roboto-condensed-regular;
   font-weight: 400;
   font-size: 16px;
@@ -83,6 +84,7 @@
   color: $light;
   border: none;
   cursor: pointer;
+  padding: 0;
 
   @media (min-width: $tablet) {
     font-size: 18px;
@@ -104,6 +106,12 @@
     height: 2px;
     width: 100%;
     background-color: #d10a42;
+  }
+
+  @media (min-width: $desctop) {
+    &::after {
+      bottom: -5px;
+    }
   }
 }
 

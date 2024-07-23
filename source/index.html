@@ -35,7 +35,7 @@
               </ul>
               <div class="hero__text-block">
                 <p class="hero__text-city">Омск</p>
-                <h1 class="hero__title">ФИТНЕС ЦЕНТР</h1>
+                <h1 class="hero__title">ФИТНЕС <span>ЦЕНТР</span></h1>
               </div>
               <button class="hero__button button" type="button">Купить абонемент</button>
             </div>
@@ -92,19 +92,19 @@
             <li class="price__card-item card">
               <h3 class="card__title">С тренером</h3>
               <p class="card__subtitle">12 занятий</p>
-              <p class="card__price" data-price="5000">5000 <span class="card__price-span">₽</span></p>
+              <p class="card__price" data-price="5000">5000<span class="card__rubles"><span class="visually-hidden">рублей.</span></span></p>
               <a class="card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
             <li class="price__card-item card">
               <h3 class="card__title">Дневной</h3>
               <p class="card__subtitle">с 8:00 до 17:00</p>
-              <p class="card__price" data-price="1700">1700 <span class="card__price-span">₽</span></p>
+              <p class="card__price" data-price="1700">1700<span class="card__rubles"><span class="visually-hidden">рублей.</span></span></p>
               <a class="card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
             <li class="price__card-item card">
               <h3 class="card__title">Полный день</h3>
               <p class="card__subtitle">с 8:00 до 22:00</p>
-              <p class="card__price" data-price="2700">2700 <span class="card__price-span">₽</span></p>
+              <p class="card__price" data-price="2700">2700<span class="card__rubles"><span class="visually-hidden">рублей.</span></span></p>
               <a class="card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
           </ul>
@@ -120,8 +120,10 @@
               <div class="games__month-year">
                 <p class="games__date">7</p><span class="games__month-span">Марта</span><span class="games__year-span">2019</span>
               </div>
-              <p class="games__date-title">Время</p>
-              <p class="games__date">12:00</p>
+              <div class="games__time">
+                <p class="games__date-title">Время</p>
+                <p class="games__date">12:00</p>
+              </div>
             </div>
             <p class="games__desc">Ежегодные соревнования по CrossFit</p>
             <a class="games__link button" href="#">Заполнить заявку</a>
@@ -303,7 +305,7 @@
                 <p>Занимайтесь без очередей и толкучки</p>
               </div>
             </li>
-            <li class="features__item feature">
+            <li class="features__item feature feature--space">
               <div class="feature__value">
                 <p>70</p>
                 <span>машин</span>
@@ -333,7 +335,7 @@
                 <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
               </div>
             </li>
-            <li class="features__item feature">
+            <li class="features__item feature feature--space">
               <div class="feature__value">
                 <p>5+</p>
                 <span>лет</span>
@@ -360,7 +362,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 1366px)" srcset="./img/offers-desc@1x.webp 1x, ./img/offers-desc@2x.webp 2x" width="280" height="460">
                 <source type="image/webp" media="(min-width: 768px)" srcset="./img/offers-tab@1x.webp 1x, ./img/offers-tab@2x.webp 2x" width="400" height="462">
-                <source type="image/webp" srcset="./img/games-mob@1x.webp 1x, ./img/offers-mob@2x.webp 2x" width="320" height="360">
+                <source type="image/webp" srcset="./img/offers-mob@1x.webp 1x, ./img/offers-mob@2x.webp 2x" width="320" height="360">
                 <source type="image/jpg" media="(min-width: 1366px)" srcset="./img/offers-desc@1x.jpg 1x, ./img/offers-desc@2x.jpg 2x" width="280" height="460">
                 <source type="image/jpg" media="(min-width: 768px)" srcset="./img/offers-tab@1x.jpg 1x, ./img/offers-tab@2x.jpg 2x" width="400" height="462">
                 <img class="offers__image" src="./img/offers-mob@1x.jpg" srcset="./img/offers-mob@2x.jpg 2x" alt="Фотография спортивной девушки." width="320" height="360">
@@ -402,16 +404,16 @@
             <ul class="faq__accordions accordions">
               <li class="accordions__item accordions__item--active">
                 <div class="accordions__item-top">
-                <h4>Как стать членом фитнес-центра?</h4>
+                  <h3>Как стать членом <br>фитнес-центра?</h3>
                   <button class="accordions__button accordions__button--active" type="button">
                     <span class="visually-hidden">Раскрыть/скрыть ответ на вопрос.</span>
                   </button>
                 </div>
-                <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+                <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется<br>онлайн и договор придёт вам на почту.</p>
               </li>
               <li class="accordions__item">
                 <div class="accordions__item-top">
-                  <h4>Где можно посмотреть расписание?</h4>
+                  <h3>Где можно посмотреть расписание?</h3>
                   <button class="accordions__button" type="button">
                     <span class="visually-hidden">Раскрыть/скрыть ответ на вопрос.</span>
                   </button>
@@ -420,7 +422,7 @@
               </li>
               <li class="accordions__item">
                 <div class="accordions__item-top">
-                  <h4>Есть кулеры в центре? Предоставляются полотенца?</h4>
+                  <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
                   <button class="accordions__button" type="button">
                     <span class="visually-hidden">Раскрыть/скрыть ответ на вопрос.</span>
                   </button>
@@ -429,7 +431,7 @@
               </li>
               <li class="accordions__item">
                 <div class="accordions__item-top">
-                  <h4>Сколько тренеров работает в клубе и какова  их квалификация?</h4>
+                  <h3>Сколько тренеров работает в клубе и какова  их квалификация?</h3>
                   <button class="accordions__button" type="button">
                     <span class="visually-hidden">Раскрыть/скрыть ответ на вопрос.</span>
                   </button>
@@ -456,7 +458,7 @@
                   <img src="./img/reviews-mob@1x.jpg" srcset="./img/reviews-mob@2x.jpg 2x" alt="Фотография Анны Орловы." width="68" height="68">
                 </picture>
                 <div class="reviews__item-content">
-                  <h4>Анна Орлова</h4>
+                  <h3>Анна Орлова</h3>
                   <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </div>
               </li>
@@ -468,7 +470,7 @@
                   <img src="./img/reviews-mob@1x.jpg" srcset="./img/reviews-mob@2x.jpg 2x" alt="Фотография Анны Орловы." width="68" height="68">
                 </picture>
                 <div class="reviews__item-content">
-                  <h4>Анна Орлова</h4>
+                  <h3>Анна Орлова</h3>
                   <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </div>
               </li>
@@ -496,7 +498,7 @@
           <div class="contacts__wrapper">
             <h2 class="contacts__title title">Контакты</h2>
             <div class="contacts__content">
-              <address class="contacts__address">
+              <div class="contacts__address">
                 <div class="contacts__block">
                   <h3 class="contacts__subtitle">Адрес:</h3>
                   <p class="contacts__desc">г. Омск, ул. 60 лет Октября, 7</p>
@@ -505,8 +507,8 @@
                   <h3 class="contacts__subtitle">График работы:</h3>
                   <p class="contacts__desc">Пн-Вс: с 8:00 до 22:00</p>
                 </div>
-              </address>
-              <address class="contacts__address">
+              </div>
+              <div class="contacts__address">
                 <div class="contacts__block">
                   <h3 class="contacts__subtitle">Телефон:</h3>
                   <p class="contacts__desc">
@@ -519,7 +521,7 @@
                     <a class="contscts__mail" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
                   </p>
                 </div>
-              </address>
+              </div>
             </div>
           </div>
         </section>

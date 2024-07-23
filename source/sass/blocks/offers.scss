@@ -24,6 +24,7 @@
 
   @media (min-width: $tablet) {
     text-align: center;
+    margin: 0 0 35px;
   }
 
   @media (min-width: $desctop) {
@@ -59,14 +60,18 @@
   box-sizing: border-box;
   background-color: $play-btn;
   color: #ffffff;
+  min-height: 271px;
   padding: 30px;
 
   @media (min-width: $tablet) {
+    width: 278px;
     position: relative;
     min-height: 402px;
+    padding: 40px 25px;
   }
 
   @media (min-width: $desctop) {
+    width: 280px;
     min-height: 400px;
     padding: 40px 45px;
   }
@@ -106,12 +111,13 @@
 .offers__main-content p {
   font-size: 16px;
   line-height: 125%;
-  margin: 0 0 28px;
+  margin: 0 0 24px;
 
   @media (min-width: $tablet) {
     font-size: 18px;
     line-height: 133%;
     width: 228px;
+    margin: 0 0 28px;
   }
 }
 
@@ -122,8 +128,12 @@
 .offers__main-link {
   @media (min-width: $tablet) {
     position: absolute;
-    bottom: 40px;
+    bottom: 45px;
     left: 25px;
+  }
+
+  @media (min-width: $desctop) {
+    left: 45px;
   }
 }
 
@@ -149,7 +159,7 @@
 
 .offers__item {
   position: relative;
-  padding: 20px;
+  padding: 20px 20px 22px;
   border: 7px solid transparent;
   background-color: #ffffff;
   background-clip: padding-box;
@@ -191,12 +201,16 @@
 }
 
 .offers__item p {
-  margin: 0 0 20px;
+  margin: 0 0 16px;
 
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 150%;
-    margin: 0 0 30px;
+    margin: 0 0 48px;
+  }
+
+  @media (min-width: $desctop) {
+    margin: 0 0 40px;
   }
 }
 
@@ -204,6 +218,6 @@
   @media (min-width: $tablet) {
     position: absolute;
     left: 20px;
-    bottom: 20px;
+    bottom: 25px;
   }
 }

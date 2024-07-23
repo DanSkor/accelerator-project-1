@@ -6,11 +6,12 @@
 @import "./vendor/normalize";
 
 // BLOCKS
+@import "./blocks/button.scss";
+@import "./blocks/link.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/header.scss";
-@import "./blocks/button.scss";
 @import "./blocks/title.scss";
 @import "./blocks/about.scss";
 @import "./blocks/price.scss";
@@ -21,7 +22,6 @@
 @import "./blocks/features.scss";
 @import "./blocks/feature.scss";
 @import "./blocks/offers.scss";
-@import "./blocks/link.scss";
 @import "./blocks/faq.scss";
 @import "./blocks/tabs.scss";
 @import "./blocks/accordions.scss";

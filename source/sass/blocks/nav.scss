@@ -1,17 +1,19 @@
 .nav__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px 35px;
+  gap: 18px 36px;
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet) {
     gap: 30px;
+    margin-top: -1px;
   }
 
   @media (min-width: $desctop) {
     gap: 82px;
+    margin-top: -3px;
   }
 }
 

@@ -11,11 +11,11 @@
   padding: 40px 15px;
 
   @media (min-width: $tablet) {
-    padding: 45px;
+    padding: 44px 45px;
     flex-direction: row;
     gap: 10px;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
   @media (min-width: $desctop) {
@@ -25,4 +25,12 @@
 
 .footer__logo {
   display: block;
+}
+
+.footer__social {
+  margin: -1px 0 0;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }

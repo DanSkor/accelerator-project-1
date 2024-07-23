@@ -41,5 +41,6 @@
   @media (min-width: $desctop) {
     display: grid;
     grid-template-columns: 260px 860px;
+    gap: 40px;
   }
 }

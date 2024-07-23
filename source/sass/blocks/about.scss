@@ -12,7 +12,7 @@
     display: flex;
     gap: 145px;
     text-align: start;
-    padding: 120px 103px 240px;
+    padding: 118px 103px 240px;
   }
 }
 
@@ -51,7 +51,7 @@
 
   @media (min-width: $desctop) {
     font-size: 22px;
-    margin: 0 0 95px;
+    margin: 0 0 94px;
   }
 }
 
@@ -71,7 +71,7 @@
 
 .about__desc-extra {
   display: none;
-  margin: 16px 0 0;
+  margin: 8px 0 0;
 
   @media (min-width: $desctop) {
     display: block;
@@ -93,10 +93,10 @@
   height: 170px;
   background-image:
     image-set(
-      url("../../img/video-bg@1x.webp") type("image/webp") 1x,
-      url("../../img/video-bg@2x.webp") type("image/webp") 2x,
-      url("../../img/video-bg@1x.jpg") type("image/jpg") 1x,
-      url("../../img/video-bg@2x.jpg") type("image/jpg") 2x
+      url("../../img/video-bg-mob@1x.webp") type("image/webp") 1x,
+      url("../../img/video-bg-mob@2x.webp") type("image/webp") 2x,
+      url("../../img/video-bg-mob@1x.jpg") type("image/jpg") 1x,
+      url("../../img/video-bg-mob@2x.jpg") type("image/jpg") 2x
     );
 
   @media (min-width: $tablet) {
@@ -106,12 +106,26 @@
     transform: translateX(-50%);
     margin: 0 auto;
     width: 270px;
+    background-image:
+      image-set(
+        url("../../img/video-bg-tab@1x.webp") type("image/webp") 1x,
+        url("../../img/video-bg-tab@2x.webp") type("image/webp") 2x,
+        url("../../img/video-bg-tab@1x.jpg") type("image/jpg") 1x,
+        url("../../img/video-bg-tab@2x.jpg") type("image/jpg") 2x
+      );
   }
 
   @media (min-width: $desctop) {
     width: 360px;
     height: 230px;
     bottom: 125px;
+    background-image:
+      image-set(
+        url("../../img/video-bg-desc@1x.webp") type("image/webp") 1x,
+        url("../../img/video-bg-desc@2x.webp") type("image/webp") 2x,
+        url("../../img/video-bg-desc@1x.jpg") type("image/jpg") 1x,
+        url("../../img/video-bg-desc@2x.jpg") type("image/jpg") 2x
+      );
   }
 }
 
@@ -133,6 +147,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-sizing: border-box;
     width: 72px;
     height: 72px;
     background-color: transparent;
@@ -145,7 +160,7 @@
     position: absolute;
     content: "";
     top: 50%;
-    left: 50%;
+    left: 53%;
     transform: translate(-50%, -50%);
     width: 12px;
     height: 12px;
@@ -153,5 +168,20 @@
     mask-repeat: no-repeat;
     mask-position: center;
     background-color: #ffffff;
+  }
+
+  @media (min-width: $desctop) {
+    width: 72px;
+    height: 72px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      width: 17px;
+      height: 17px;
+    }
   }
 }

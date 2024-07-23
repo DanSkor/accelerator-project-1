@@ -4,6 +4,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $desctop) {
+    transform: translateY(-1px);
+  }
 }
 
 .accordions__item {
@@ -17,6 +21,10 @@
   @media (min-width: $tablet) {
     padding: 23px 0;
   }
+
+  @media (min-width: $desctop) {
+    padding: 22px 0 23px;
+  }
 }
 
 .accordions__item-top {
@@ -25,7 +33,13 @@
   align-items: center;
 }
 
-.accordions__item h4 {
+.accordions__item-top br {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.accordions__item h3 {
   width: 238px;
   font-family: $roboto-condensed-regular;
   font-weight: 400;
@@ -39,6 +53,7 @@
   }
 
   @media (min-width: $desctop) {
+    width: 660px;
     font-size: 24px;
   }
 }
@@ -48,7 +63,7 @@
   display: none;
   font-size: 16px;
   line-height: 125%;
-  margin: 20px 0 0;
+  margin: 19px 0 1px;
 
   @media (min-width: $tablet) {
     width: 560px;
@@ -65,6 +80,14 @@
 
 .accordions__item--active p {
   display: block;
+}
+
+.accordions__item p br {
+  display: none;
+
+  @media (min-width: $desctop) {
+    display: block;
+  }
 }
 
 .accordions__button {

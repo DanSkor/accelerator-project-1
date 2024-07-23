@@ -23,6 +23,7 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 46px;
+    font-size: 54px;
   }
 }
 
@@ -40,8 +41,8 @@
 
 .juri__button {
   display: none;
-  width: 16px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   border: none;
   background-color: #102654;
   mask-image: url("/__spritemap#sprite-slider-arrow-view");
@@ -50,9 +51,14 @@
   @media (min-width: $tablet) {
     position: absolute;
     top: 50%;
-    left: -37px;
-    transform: translateY(-50%);
+    left: -62px;
+    transform: translateY(-50%) rotate(180deg);
     display: block;
+  }
+
+  @media (min-width: $desctop) {
+    left: -61px;
+    transform: translateY(-59%) rotate(180deg);
   }
 }
 
@@ -61,15 +67,20 @@
 
   @media (min-width: $tablet) {
     left: auto;
-    right: -37px;
-    transform: translateY(-50%) rotate(180deg);
+    right: -62px;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $desctop) {
+    right: -63px;
+    transform: translateY(-59%);
   }
 }
 
 .juri__list {
   display: flex;
   gap: 40px;
-  width: 300px;
+  height: 300px;
   color: #ffffff;
   margin: 0;
   padding: 0;
