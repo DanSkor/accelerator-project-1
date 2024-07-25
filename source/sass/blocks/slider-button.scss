@@ -1,0 +1,87 @@
+
+.slider-button {
+  position: absolute;
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 34px;
+    border: none;
+    background-color: #102654;
+    mask-image: url("/__spritemap#sprite-slider-arrow-view");
+    cursor: pointer;
+  }
+
+  &:hover {
+    border: 1px solid #102654;
+  }
+
+  &:focus {
+    background-color: $price-shadow;
+    border: 1px solid #102654;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #102654;
+  }
+
+  &:active::after {
+    background-color: #ffffff;
+  }
+
+  &:disabled {
+    cursor: default;
+    background: transparent;
+    border: 1px solid transparent;
+  }
+
+  &:disabled::after {
+    background: rgba(16, 38, 84, 0.3);
+  }
+
+  @media (min-width: $tablet) {
+    display: block;
+    top: 50%;
+    left: -45px;
+    transform: translate(-50%, -50%) rotate(180deg);
+
+    &::after {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(0);
+    }
+  }
+
+  @media (min-width: $desctop) {
+    left: -69px;
+    transform: translateY(-57%) rotate(180deg);
+  }
+}
+
+.slider-button--next {
+  @media (min-width: $tablet) {
+    left: auto;
+    right: -70px;
+    transform: translateY(-50%);
+
+    &::after {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(0);
+    }
+  }
+
+  @media (min-width: $desctop) {
+    right: -63px;
+    transform: translateY(-59%);
+  }
+}

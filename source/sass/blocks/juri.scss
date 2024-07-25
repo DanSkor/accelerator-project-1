@@ -39,44 +39,6 @@
   }
 }
 
-.juri__button {
-  display: none;
-  width: 34px;
-  height: 34px;
-  border: none;
-  background-color: #102654;
-  mask-image: url("/__spritemap#sprite-slider-arrow-view");
-  cursor: pointer;
-
-  @media (min-width: $tablet) {
-    position: absolute;
-    top: 50%;
-    left: -62px;
-    transform: translateY(-50%) rotate(180deg);
-    display: block;
-  }
-
-  @media (min-width: $desctop) {
-    left: -61px;
-    transform: translateY(-59%) rotate(180deg);
-  }
-}
-
-.juri__button--next {
-  transform: rotate(180deg);
-
-  @media (min-width: $tablet) {
-    left: auto;
-    right: -62px;
-    transform: translateY(-50%);
-  }
-
-  @media (min-width: $desctop) {
-    right: -63px;
-    transform: translateY(-59%);
-  }
-}
-
 .juri__list {
   display: flex;
   gap: 40px;

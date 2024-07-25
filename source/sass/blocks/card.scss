@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   width: 290px;
   box-sizing: border-box;
   min-height: 384px;
@@ -12,7 +13,27 @@
 
   @media (min-width: $desctop) {
     width: 360px;
+    border: 7px solid #ffffff;
+
+    &:hover {
+      border: 7px solid transparent;
+      border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+      border-image-slice: 1;
+    }
   }
+}
+
+.card:hover .button--secondary {
+  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  color: #ffffff;
+  border: none;
+  padding: 27px;
+}
+
+.card:has(.card__button:focus) {
+  border: 7px solid transparent;
+  border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  border-image-slice: 1;
 }
 
 .card__title {

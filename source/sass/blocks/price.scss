@@ -74,6 +74,7 @@
 }
 
 .price__button {
+  position: relative;
   display: flex;
   min-height: 24px;
   font-family: $roboto-condensed-regular;
@@ -85,18 +86,7 @@
   border: none;
   cursor: pointer;
   padding: 0;
-
-  @media (min-width: $tablet) {
-    font-size: 18px;
-  }
-
-  @media (min-width: $desctop) {
-    font-size: 20px;
-  }
-}
-
-.price__item--current {
-  position: relative;
+  transition: all 0.2s ease;
 
   &::after {
     position: absolute;
@@ -105,19 +95,99 @@
     bottom: -2px;
     height: 2px;
     width: 100%;
-    background-color: #d10a42;
+    background-color: transparent;
+  }
+
+  &:hover {
+    color: rgba(16, 38, 84, 0.7);
+  }
+
+  &:hover::after {
+    background-color: #787878;
+  }
+
+  &:focus {
+    color: #102654;
+    outline: none;
+  }
+
+  &:focus::after {
+    background-color: #102654;
+  }
+
+  &:active {
+    color: #102654;
+  }
+
+  &:active::after {
+    background-color: $play-btn;
+  }
+
+  &:disabled {
+    color: #102654;
+    opacity: 0.3;
+  }
+
+  &:disabled::after {
+    background-color: #102654;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
   }
 
   @media (min-width: $desctop) {
+    font-size: 20px;
+
     &::after {
       bottom: -5px;
     }
   }
 }
 
-.price__item--current .price__button {
+.price__button--current {
   color: #102654;
+  cursor: default;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #102654;
+
+    &::after {
+      background-color: $play-btn;
+    }
+  }
+
+  &::after {
+    background-color: $play-btn;
+  }
 }
+
+// .price__item--current {
+//   position: relative;
+
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   left: 0;
+  //   bottom: -2px;
+  //   height: 2px;
+  //   width: 100%;
+  //   background-color: #d10a42;
+  // }
+
+  // @media (min-width: $desctop) {
+    // &::after {
+    //   bottom: -5px;
+    // }
+//   }
+// }
+
+// .price__item--current .price__button {
+//   color: #102654;
+// }
 
 .price__card-list {
   display: flex;

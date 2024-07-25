@@ -7,12 +7,12 @@
   overflow: hidden;
 
   @media (min-width: $tablet) {
-    margin: 60px 44px;
+    margin: 60px 20px;
     padding: 0;
   }
 
   @media (min-width: $desctop) {
-    margin: 100px 299px;
+    margin: 100px 250px;
   }
 }
 
@@ -29,35 +29,57 @@
   }
 }
 
-.reviews__button {
-  display: none;
-  width: 35px;
-  height: 35px;
-  border: none;
-  background-color: #102654;
-  mask-image: url("/__spritemap#sprite-slider-arrow-view");
-  cursor: pointer;
+// .reviews__button {
+//   display: none;
+//   width: 35px;
+//   height: 35px;
+//   border: none;
+//   background-color: #102654;
+//   mask-image: url("/__spritemap#sprite-slider-arrow-view");
+//   cursor: pointer;
 
-  &--next {
-    transform: rotate(0);
+//   &--next {
+//     transform: rotate(0);
+//   }
+
+//   &--disabled {
+//     opacity: 0.3;
+//   }
+
+//   @media (min-width: $tablet) {
+//     display: block;
+//     position: absolute;
+//     top: 50%;
+//     left: -8px;
+//     transform: translateY(-50%) rotate(180deg);
+
+//     &--next {
+//       transform: translateY(-50%) rotate(0);
+//       left: auto;
+//       right: -8px;
+//     }
+//   }
+// }
+
+.reviews__button.slider-button--prev {
+  @media (min-width: $tablet) {
+    left: 33px;
   }
 
-  &--disabled {
-    opacity: 0.3;
+  @media (min-width: $desctop) {
+    left: 32px;
+    transform: translateY(-53%) rotate(180deg);
+  }
+}
+
+.reviews__button.slider-button--next {
+  @media (min-width: $tablet) {
+    right: 8px;
   }
 
   @media (min-width: $tablet) {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: -8px;
-    transform: translateY(-50%) rotate(180deg);
-
-    &--next {
-      transform: translateY(-50%) rotate(0);
-      left: auto;
-      right: -8px;
-    }
+    right: 32px;
+    transform: translateY(-52%);
   }
 }
 
@@ -69,12 +91,12 @@
   list-style: none;
 
   @media (min-width: $tablet) {
-    margin: 0 90px;
+    margin: 0 114px;
     gap: 200px;
   }
 
   @media (min-width: $desctop) {
-    margin: 0 104px;
+    margin: 0 153px;
   }
 }
 

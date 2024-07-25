@@ -98,6 +98,39 @@
   border-radius: 50%;
   border: 1px solid $btn-border;
   cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $btn-border;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #ffffff;
+  }
+
+  &:focus {
+    background-color: $divider;
+    outline: none;
+  }
+
+  &:focus::before,
+  &:focus::after {
+    background-color: #ffffff;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid $btn-border;
+    opacity: 0.3;
+  }
+
+  &:disabled::before,
+  &:disabled::after {
+    background-color: $btn-border;
+    opacity: 0.3;
+  }
 
   &::before,
   &::after {

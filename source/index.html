@@ -80,8 +80,8 @@
         <div class="price__wrapper">
           <h2 class="price__title title">Абонементы</h2>
           <ul class="price__list">
-            <li class="price__item price__item--current">
-              <button class="price__button" type="button">1 месяц</button>
+            <li class="price__item">
+              <button class="price__button price__button--current" type="button">1 месяц</button>
             </li>
             <li class="price__item">
               <button class="price__button" type="button">6 месяцев</button>
@@ -144,10 +144,10 @@
         <div class="juri__wrapper">
           <h2 class="juri__title title">Жюри</h2>
           <div class="juri__slider">
-            <button class="juri__button juri__button--prev" type="button">
+            <button class="juri__button slider-button slider-button--prev" type="button">
               <span class="visually-hidden">Показать предыдущий слайд.</span>
             </button>
-            <button class="juri__button juri__button--next" type="button">
+            <button class="juri__button slider-button slider-button--next" type="button">
               <span class="visually-hidden">Показать следующий слайд.</span>
             </button>
             <div class="juri__slider-wrapper">
@@ -448,7 +448,7 @@
         <div class="reviews__wrapper">
           <h2 class="reviews__title title">Отзывы</h2>
           <div class="reviews__slider-wrapper">
-            <button class="reviews__button reviews__button--prev reviews__button--disabled" type="button">
+            <button class="reviews__button slider-button slider-button--prev" type="button">
               <span class="visually-hidden">Предыдущий слайд.</span>
             </button>
             <ul class="reviews__list">
@@ -477,7 +477,7 @@
                 </div>
               </li>
             </ul>
-            <button class="reviews__button reviews__button--next" type="button">
+            <button class="reviews__button slider-button slider-button--next" type="button">
               <span class="visually-hidden">Следующий слайд.</span>
             </button>
         </div>
@@ -490,6 +490,7 @@
             <form class="form__content" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="name">Имя.</label>
               <input class="form__input" type="text" id="name" name="name" placeholder="Имя" required>
+              <span class="form__error">Текст ошибки</span>
               <label class="visually-hidden" for="phone">Телефон.</label>
               <input class="form__input" type="number" id="phone" name="phone" placeholder="Телефон" required>
               <button class="form__button button" type="submit">Отправить</button>

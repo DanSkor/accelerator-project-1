@@ -23,4 +23,47 @@
   height: 25px;
   border-radius: 50%;
   background-color: #ffffff;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: $divider;
+  }
+
+  &:hover svg path {
+    fill: #ffffff;
+  }
+
+  &:focus {
+    background: $price;
+    outline: none;
+  }
+
+  &:focus svg path {
+    fill: #ffffff;
+  }
+
+  &:active {
+    background: #102654;
+  }
+
+  &:active svg path {
+    fill: #ffffff;
+  }
+
+  &--disabled {
+    background-color: #ffffff;
+    opacity: 0.3;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #ffffff;
+      opacity: 0.3;
+      outline: none;
+    }
+  }
+
+  &--disabled svg path {
+    fill: $dark;
+  }
 }

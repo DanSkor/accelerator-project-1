@@ -7,16 +7,69 @@
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-  background-color: transparent;
+  background: transparent;
   padding: 22px;
   border: 2px solid #ffffff;
   cursor: pointer;
   text-decoration: none;
+  box-sizing: border-box;
+
+  &:hover {
+    background: #ffffff;
+    color: $price;
+  }
+
+  &:focus {
+    background: rgba(255, 255, 255, 0.8);
+    color: $price;
+    border: 2px solid #000000;
+    outline: none;
+  }
+
+  &:active {
+    background: #ffffff;
+    color: #102654;
+    border: 2px solid #ffffff;
+  }
+
+  &:disabled {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    opacity: 0.5;
+  }
 
   &--secondary {
     color: #102654;
     border: 2px solid #102654;
     padding: 25px;
+
+    &:hover {
+      background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+      color: #ffffff;
+      border: none;
+      padding: 27px;
+    }
+
+    &:focus {
+      background: linear-gradient(151deg, rgba(237, 2, 51, 0.8) 0%, rgba(0, 62, 183, 0.8) 100%);
+      color: #ffffff;
+      border: 2px solid #000000;
+      outline: none;
+    }
+
+    &:active {
+      background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+      color: rgba(255, 255, 255, 0.7);
+      border: 2px solid transparent;
+    }
+
+    &:disabled {
+      background: transparent;
+      color: #ffffff;
+      border: 2px solid #102654;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet) {

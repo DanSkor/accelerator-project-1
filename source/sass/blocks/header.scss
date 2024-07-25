@@ -17,6 +17,34 @@
   color: #ffffff;
   text-decoration: none;
   margin-top: -2px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: rgba(28, 51, 116, 0.5);
+  }
+
+  &:focus {
+    color: $btn-border;
+    outline: none;
+  }
+
+  &:active {
+    color: #102654;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 1px;
+  }
+
+  &--disabled,
+  &--disabled:hover,
+  &--disabled:focus,
+  &--disabled:active {
+    color: $primary-bg;
+    opacity: 0.5;
+    cursor: default;
+    text-decoration: none;
+    outline: none;
+  }
 
   @media (min-width: $tablet) {
     font-size: 24px;
