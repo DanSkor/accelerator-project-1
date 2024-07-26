@@ -31,9 +31,11 @@
 }
 
 .card:has(.card__button:focus) {
-  border: 7px solid transparent;
-  border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-  border-image-slice: 1;
+  @media (min-width: $desctop) {
+    border: 7px solid transparent;
+    border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    border-image-slice: 1;
+  }
 }
 
 .card__title {

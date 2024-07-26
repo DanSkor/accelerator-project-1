@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUPERGYM</title>
+    <meta name="description" content="Сайт спортивного зала 'SUPERGYM'">
+    <link rel="canonical" href="http://localhost:3000/"/>
     <link rel="icon" href="./favicon.ico">
     <link rel="icon" type="image/png" href="./img/favicon.png">
     <link rel="stylesheet" href="sass/style.scss">
@@ -72,7 +74,6 @@
               <span class="visually-hidden">Включить видео.</span>
             </button>
           </div>
-          <!-- <iframe src="https://www.youtube.com/embed/9TZXsZItgdw?si=w3TCzNZztm2D326P?autoplay=1" width="320" height="170" frameborder="0" loading="lazy" title="Видеоролик, в котором показываются основные зоны в спортивном зале." allowfullscreen></iframe> -->
         </div>
       </section>
 
@@ -81,29 +82,29 @@
           <h2 class="price__title title">Абонементы</h2>
           <ul class="price__list">
             <li class="price__item">
-              <button class="price__button price__button--current" type="button">1 месяц</button>
+              <button class="price__button price__button--1month price__button--current" type="button">1 месяц</button>
             </li>
             <li class="price__item">
-              <button class="price__button" type="button">6 месяцев</button>
+              <button class="price__button price__button--6months" type="button">6 месяцев</button>
             </li>
             <li class="price__item">
-              <button class="price__button" type="button">12 месяцев</button>
+              <button class="price__button price__button--12months" type="button">12 месяцев</button>
             </li>
           </ul>
           <ul class="price__card-list">
-            <li class="price__card-item card">
+            <li class="price__card-item card card--coach">
               <h3 class="card__title">С тренером</h3>
               <p class="card__subtitle">12 занятий</p>
               <p class="card__price" data-price="5000">5000<span class="card__rubles"><span class="visually-hidden">рублей.</span></span></p>
               <a class="card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
-            <li class="price__card-item card">
+            <li class="price__card-item card card--day">
               <h3 class="card__title">Дневной</h3>
               <p class="card__subtitle">с 8:00 до 17:00</p>
               <p class="card__price" data-price="1700">1700<span class="card__rubles"><span class="visually-hidden">рублей.</span></span></p>
               <a class="card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
-            <li class="price__card-item card">
+            <li class="price__card-item card card--fullday">
               <h3 class="card__title">Полный день</h3>
               <p class="card__subtitle">с 8:00 до 22:00</p>
               <p class="card__price" data-price="2700">2700<span class="card__rubles"><span class="visually-hidden">рублей.</span></span></p>
@@ -136,7 +137,7 @@
             <source type="image/webp" srcset="./img/games-mob@1x.webp 1x, ./img/games-mob@2x.webp 2x" width="290" height="290">
             <source type="image/jpg" media="(min-width: 1366px)" srcset="./img/games-desc@1x.jpg 1x, ./img/games-desc@2x.jpg 2x" width="660" height="500">
             <source type="image/jpg" media="(min-width: 768px)" srcset="./img/games-tab@1x.jpg 1x, ./img/games-tab@2x.jpg 2x" width="378" height="348">
-            <img class="games__image" src="./img/games-mob@1x.jpg" srcset="./img/games-mob@2x.jpg 2x" alt="Фотография спортсмена." width="290" height="290">
+            <img class="games__image" src="./img/games-mob@1x.jpg" srcset="./img/games-mob@2x.jpg 2x" alt="Фотография спортсмена." width="290" height="290" loading="lazy">
           </picture>
         </div>
       </article>
@@ -144,18 +145,15 @@
         <div class="juri__wrapper">
           <h2 class="juri__title title">Жюри</h2>
           <div class="juri__slider">
-            <button class="juri__button slider-button slider-button--prev" type="button">
+            <button class="juri__button slider-button slider-button--prev swiper-button-prev" type="button">
               <span class="visually-hidden">Показать предыдущий слайд.</span>
             </button>
-            <button class="juri__button slider-button slider-button--next" type="button">
-              <span class="visually-hidden">Показать следующий слайд.</span>
-            </button>
-            <div class="juri__slider-wrapper">
-              <ul class="juri__list">
-                <li class="juri__item juri-card">
+            <div class="juri__slider-wrapper swiper">
+              <ul class="juri__list swiper-wrapper">
+                <li class="juri__item juri-card swiper-slide" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="./img/juri-1@1x.webp 1x, ./img/juri-1@2x.webp 2x" width="260" height="300">
-                    <img class="juri-card__image" src="./img/juri-1@1x.jpg" srcset="./img/juri-1@2x.jpg 2x" alt="Фотография Анны Павловы." width="260" height="300">
+                    <img class="juri-card__image" src="./img/juri-1@1x.jpg" srcset="./img/juri-1@2x.jpg 2x" alt="Фотография Анны Павловы." width="260" height="300" loading="lazy">
                   </picture>
                   <div class="juri-card__inner-wrapper">
                     <h3 class="juri-card__title">Анна Павлова</h3>
@@ -169,10 +167,10 @@
                     </div>
                   </div>
                 </li>
-                <li class="juri__item juri-card">
+                <li class="juri__item juri-card swiper-slide" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="./img/juri-2@1x.webp 1x, ./img/juri-2@2x.webp 2x" width="260" height="300">
-                    <img class="juri-card__image" src="./img/juri-2@1x.jpg" srcset="./img/juri-2@2x.jpg 2x" alt="Фотография Алексея Лаврова." width="260" height="300">
+                    <img class="juri-card__image" src="./img/juri-2@1x.jpg" srcset="./img/juri-2@2x.jpg 2x" alt="Фотография Алексея Лаврова." width="260" height="300" loading="lazy">
                   </picture>
                   <div class="juri-card__inner-wrapper">
                     <h3 class="juri-card__title">Алексей Лавров</h3>
@@ -186,10 +184,10 @@
                     </div>
                   </div>
                 </li>
-                <li class="juri__item juri-card">
+                <li class="juri__item juri-card swiper-slide" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="./img/juri-3@1x.webp 1x, ./img/juri-3@2x.webp 2x" width="260" height="300">
-                    <img class="juri-card__image" src="./img/juri-3@1x.jpg" srcset="./img/juri-3@2x.jpg 2x" alt="Фотография Александра Пашкова." width="260" height="300">
+                    <img class="juri-card__image" src="./img/juri-3@1x.jpg" srcset="./img/juri-3@2x.jpg 2x" alt="Фотография Александра Пашкова." width="260" height="300" loading="lazy">
                   </picture>
                   <div class="juri-card__inner-wrapper">
                     <h3 class="juri-card__title">Александр Пашков</h3>
@@ -203,10 +201,10 @@
                     </div>
                   </div>
                 </li>
-                <li class="juri__item juri-card">
+                <li class="juri__item juri-card swiper-slide" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="./img/juri-4@1x.webp 1x, ./img/juri-4@2x.webp 2x" width="260" height="300">
-                    <img class="juri-card__image" src="./img/juri-4@1x.jpg" srcset="./img/juri-4@2x.jpg 2x" alt="Фотография Марии Кетовой." width="260" height="300">
+                    <img class="juri-card__image" src="./img/juri-4@1x.jpg" srcset="./img/juri-4@2x.jpg 2x" alt="Фотография Марии Кетовой." width="260" height="300" loading="lazy">
                   </picture>
                   <div class="juri-card__inner-wrapper">
                     <h3 class="juri-card__title">Мария Кетова</h3>
@@ -220,10 +218,10 @@
                     </div>
                   </div>
                 </li>
-                <li class="juri__item juri-card">
+                <li class="juri__item juri-card swiper-slide" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="./img/juri-1@1x.webp 1x, ./img/juri-1@2x.webp 2x" width="260" height="300">
-                    <img class="juri-card__image" src="./img/juri-1@1x.jpg" srcset="./img/juri-1@2x.jpg 2x" alt="Фотография Анны Павловы." width="260" height="300">
+                    <img class="juri-card__image" src="./img/juri-1@1x.jpg" srcset="./img/juri-1@2x.jpg 2x" alt="Фотография Анны Павловы." width="260" height="300" loading="lazy">
                   </picture>
                   <div class="juri-card__inner-wrapper">
                     <h3 class="juri-card__title">Анна Павлова</h3>
@@ -237,10 +235,10 @@
                     </div>
                   </div>
                 </li>
-                <li class="juri__item juri-card">
+                <li class="juri__item juri-card swiper-slide" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="./img/juri-2@1x.webp 1x, ./img/juri-2@2x.webp 2x" width="260" height="300">
-                    <img class="juri-card__image" src="./img/juri-2@1x.jpg" srcset="./img/juri-2@2x.jpg 2x" alt="Фотография Алексея Лаврова." width="260" height="300">
+                    <img class="juri-card__image" src="./img/juri-2@1x.jpg" srcset="./img/juri-2@2x.jpg 2x" alt="Фотография Алексея Лаврова." width="260" height="300" loading="lazy">
                   </picture>
                   <div class="juri-card__inner-wrapper">
                     <h3 class="juri-card__title">Алексей Лавров</h3>
@@ -254,10 +252,10 @@
                     </div>
                   </div>
                 </li>
-                <li class="juri__item juri-card">
+                <li class="juri__item juri-card swiper-slide" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="./img/juri-3@1x.webp 1x, ./img/juri-3@2x.webp 2x" width="260" height="300">
-                    <img class="juri-card__image" src="./img/juri-3@1x.jpg" srcset="./img/juri-3@2x.jpg 2x" alt="Фотография Александра Пашкова." width="260" height="300">
+                    <img class="juri-card__image" src="./img/juri-3@1x.jpg" srcset="./img/juri-3@2x.jpg 2x" alt="Фотография Александра Пашкова." width="260" height="300" loading="lazy">
                   </picture>
                   <div class="juri-card__inner-wrapper">
                     <h3 class="juri-card__title">Александр Пашков</h3>
@@ -271,10 +269,10 @@
                     </div>
                   </div>
                 </li>
-                <li class="juri__item juri-card">
+                <li class="juri__item juri-card swiper-slide" tabindex="0">
                   <picture>
                     <source type="image/webp" srcset="./img/juri-4@1x.webp 1x, ./img/juri-4@2x.webp 2x" width="260" height="300">
-                    <img class="juri-card__image" src="./img/juri-4@1x.jpg" srcset="./img/juri-4@2x.jpg 2x" alt="Фотография Марии Кетовой." width="260" height="300">
+                    <img class="juri-card__image" src="./img/juri-4@1x.jpg" srcset="./img/juri-4@2x.jpg 2x" alt="Фотография Марии Кетовой." width="260" height="300" loading="lazy">
                   </picture>
                   <div class="juri-card__inner-wrapper">
                     <h3 class="juri-card__title">Мария Кетова</h3>
@@ -290,6 +288,9 @@
                 </li>
               </ul>
             </div>
+            <button class="juri__button slider-button slider-button--next swiper-button-next" type="button">
+              <span class="visually-hidden">Показать следующий слайд.</span>
+            </button>
           </div>
         </div>
       </section>
@@ -367,7 +368,7 @@
                 <source type="image/webp" srcset="./img/offers-mob@1x.webp 1x, ./img/offers-mob@2x.webp 2x" width="320" height="360">
                 <source type="image/jpg" media="(min-width: 1366px)" srcset="./img/offers-desc@1x.jpg 1x, ./img/offers-desc@2x.jpg 2x" width="280" height="460">
                 <source type="image/jpg" media="(min-width: 768px)" srcset="./img/offers-tab@1x.jpg 1x, ./img/offers-tab@2x.jpg 2x" width="400" height="462">
-                <img class="offers__image" src="./img/offers-mob@1x.jpg" srcset="./img/offers-mob@2x.jpg 2x" alt="Фотография спортивной девушки." width="320" height="360">
+                <img class="offers__image" src="./img/offers-mob@1x.jpg" srcset="./img/offers-mob@2x.jpg 2x" alt="Фотография спортивной девушки." width="320" height="360" loading="lazy">
               </picture>
             </div>
             <ul class="offers__list">
@@ -391,16 +392,16 @@
           <div class="faq__content">
             <ul class="faq__tabs tabs">
               <li class="tabs__item">
-                <button class="tabs__button tabs__button--current" type="button">Центр</button>
+                <button class="tabs__button tabs__button--center tabs__button--current" type="button">Центр</button>
               </li>
               <li class="tabs__item">
-                <button class="tabs__button" type="button">Абонемент</button>
+                <button class="tabs__button tabs__button--membership" type="button">Абонемент</button>
               </li>
               <li class="tabs__item">
-                <button class="tabs__button" type="button">Услуги</button>
+                <button class="tabs__button tabs__button--services" type="button">Услуги</button>
               </li>
               <li class="tabs__item">
-                <button class="tabs__button" type="button">Правила</button>
+                <button class="tabs__button tabs__button--rules" type="button">Правила</button>
               </li>
             </ul>
             <ul class="faq__accordions accordions">
@@ -433,7 +434,7 @@
               </li>
               <li class="accordions__item">
                 <div class="accordions__item-top">
-                  <h3>Сколько тренеров работает в клубе и какова  их квалификация?</h3>
+                  <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
                   <button class="accordions__button" type="button">
                     <span class="visually-hidden">Раскрыть/скрыть ответ на вопрос.</span>
                   </button>
@@ -448,38 +449,40 @@
         <div class="reviews__wrapper">
           <h2 class="reviews__title title">Отзывы</h2>
           <div class="reviews__slider-wrapper">
-            <button class="reviews__button slider-button slider-button--prev" type="button">
+            <div class="reviews__button slider-button slider-button--prev swiper-button-prev">
               <span class="visually-hidden">Предыдущий слайд.</span>
-            </button>
-            <ul class="reviews__list">
-              <li class="reviews__item">
-                <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/reviews-tab@1x.webp 1x, ./img/reviews-tab@2x.webp 2x" width="80" height="80">
-                  <source type="image/webp" srcset="./img/reviews-mob@1x.webp 1x, ./img/reviews-mob@2x.webp 2x" width="68" height="68">
-                  <source type="image/png" media="(min-width: 768px)" srcset="./img/reviews-tab@1x.jpg 1x, ./img/reviews-tab@2x.jpg 2x" width="80" height="80">
-                  <img src="./img/reviews-mob@1x.jpg" srcset="./img/reviews-mob@2x.jpg 2x" alt="Фотография Анны Орловы." width="68" height="68">
-                </picture>
-                <div class="reviews__item-content">
-                  <h3>Анна Орлова</h3>
-                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                </div>
-              </li>
-              <li class="reviews__item">
-                <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/reviews-tab@1x.webp 1x, ./img/reviews-tab@2x.webp 2x" width="80" height="80">
-                  <source type="image/webp" srcset="./img/reviews-mob@1x.webp 1x, ./img/reviews-mob@2x.webp 2x" width="68" height="68">
-                  <source type="image/png" media="(min-width: 768px)" srcset="./img/reviews-tab@1x.jpg 1x, ./img/reviews-tab@2x.jpg 2x" width="80" height="80">
-                  <img src="./img/reviews-mob@1x.jpg" srcset="./img/reviews-mob@2x.jpg 2x" alt="Фотография Анны Орловы." width="68" height="68">
-                </picture>
-                <div class="reviews__item-content">
-                  <h3>Анна Орлова</h3>
-                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                </div>
-              </li>
-            </ul>
-            <button class="reviews__button slider-button slider-button--next" type="button">
+            </div>
+            <div class="review__slider swiper">
+              <ul class="reviews__list swiper-wrapper">
+                <li class="reviews__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/reviews-tab@1x.webp 1x, ./img/reviews-tab@2x.webp 2x" width="80" height="80">
+                    <source type="image/webp" srcset="./img/reviews-mob@1x.webp 1x, ./img/reviews-mob@2x.webp 2x" width="68" height="68">
+                    <source type="image/png" media="(min-width: 768px)" srcset="./img/reviews-tab@1x.jpg 1x, ./img/reviews-tab@2x.jpg 2x" width="80" height="80">
+                    <img src="./img/reviews-mob@1x.jpg" srcset="./img/reviews-mob@2x.jpg 2x" alt="Фотография Анны Орловы." width="68" height="68" loading="lazy">
+                  </picture>
+                  <div class="reviews__item-content">
+                    <h3>Анна Орлова</h3>
+                    <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </li>
+                <li class="reviews__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/reviews-tab@1x.webp 1x, ./img/reviews-tab@2x.webp 2x" width="80" height="80">
+                    <source type="image/webp" srcset="./img/reviews-mob@1x.webp 1x, ./img/reviews-mob@2x.webp 2x" width="68" height="68">
+                    <source type="image/png" media="(min-width: 768px)" srcset="./img/reviews-tab@1x.jpg 1x, ./img/reviews-tab@2x.jpg 2x" width="80" height="80">
+                    <img src="./img/reviews-mob@1x.jpg" srcset="./img/reviews-mob@2x.jpg 2x" alt="Фотография Анны Орловы." width="68" height="68" loading="lazy">
+                  </picture>
+                  <div class="reviews__item-content">
+                    <h3>Анна Орлова</h3>
+                    <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="reviews__button slider-button slider-button--next swiper-button-next">
               <span class="visually-hidden">Следующий слайд.</span>
-            </button>
+            </div>
         </div>
         </div>
       </section>
@@ -489,10 +492,11 @@
             <h2 class="form__title title">Бесплатное занятие</h2>
             <form class="form__content" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="name">Имя.</label>
-              <input class="form__input" type="text" id="name" name="name" placeholder="Имя" required>
-              <span class="form__error">Текст ошибки</span>
+              <input class="form__input form__input--name" type="text" id="name" name="name" placeholder="Имя" required>
+              <span class="form__error form__error--name">Текст ошибки</span>
               <label class="visually-hidden" for="phone">Телефон.</label>
-              <input class="form__input" type="number" id="phone" name="phone" placeholder="Телефон" required>
+              <input class="form__input form__input--tel" type="number" id="phone" name="phone" placeholder="Телефон" >
+              <span class="form__error form__error--tel">Текст ошибки</span>
               <button class="form__button button" type="submit">Отправить</button>
             </form>
           </div>

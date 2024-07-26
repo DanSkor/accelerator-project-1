@@ -128,4 +128,14 @@
   font-size: 14px;
   line-height: 157%;
   color: #ff121f;
+
+  &--tel {
+    left: 0;
+    top: 92px;
+
+    @media (min-width: $tablet) {
+      top: 30px;
+      left: 54%;
+    }
+  }
 }

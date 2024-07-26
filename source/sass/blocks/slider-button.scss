@@ -38,13 +38,37 @@
     background-color: #ffffff;
   }
 
-  &:disabled {
+  // &:disabled {
+  //   cursor: default;
+  //   background: transparent;
+  //   border: 1px solid transparent;
+  // }
+
+  // &:disabled::after {
+  //   background: rgba(16, 38, 84, 0.3);
+  // }
+
+  &--disabled {
     cursor: default;
     background: transparent;
     border: 1px solid transparent;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid transparent;
+      background: transparent;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &:active::after {
+      background: rgba(16, 38, 84, 0.3);
+    }
   }
 
-  &:disabled::after {
+  &--disabled::after {
+    cursor: default;
     background: rgba(16, 38, 84, 0.3);
   }
 

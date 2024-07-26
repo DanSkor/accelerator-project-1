@@ -14,19 +14,23 @@
     box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     display: block;
   }
 
-  &:hover .juri-card__inner-wrapper {
+  &:hover .juri-card__inner-wrapper,
+  &:focus .juri-card__inner-wrapper {
     justify-content: center;
   }
 
-  &:hover .juri-card__title {
+  &:hover .juri-card__title,
+  &:focus .juri-card__title {
     margin: 0 0 8px;
   }
 
-  &:hover .juri-card__content {
+  &:hover .juri-card__content,
+  &:focus .juri-card__content {
     display: block;
   }
 }
