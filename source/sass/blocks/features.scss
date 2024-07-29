@@ -13,6 +13,7 @@
 
   @media (min-width: $desctop) {
     padding: 100px 103px;
+    max-width: 1366px;
   }
 }
 
@@ -42,5 +43,11 @@
   @media (min-width: $desctop) {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 80px 40px;
+  }
+}
+
+.features__item--coach .feature__text {
+  @media (min-width: $desctop) {
+    transform: translateX(2px);
   }
 }

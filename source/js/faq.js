@@ -10,7 +10,7 @@ const center = {
   answer3: 'Да, в вашем доступе неограниченное количество полотенец и питьевой воды.',
   question4: 'Сколько тренеров работает в клубе и какова их квалификация?',
   answer4: 'Постоянно в зале находятся 5 дежурных тренеров, кроме того 10 тренеров для идивидуальынх тренировок и 5 тренеров на групповых тренировок. У нас работают только опытные профессионалы.',
-}
+};
 
 const membership = {
   question1: 'Занятия с тренером входят в абонемент?',
@@ -21,18 +21,18 @@ const membership = {
   answer3: 'Оптимальное количество занятий – 3-4 раза еженедельно. Увеличивать это количество до 6-7 посещений тренажерного зала нецелесообразно: мышцам необходимо давать отдых, чтобы они успевали восстановиться.',
   question4: 'Что такое семейный доступ и доступ для друзей?',
   answer4: '«Family Sharing» или «Семейный доступ» – отличная функция, которая открывает доступ к библиотеке другим пользователям, благодаря чему они могут играть почти во все ваши игры или наоборот.',
-}
+};
 
 const services = {
   question1: 'Предлагает ли клуб услуги по консультированию по вопросам питания?',
-  answer1: 'Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели  и предложит программу питания.',
+  answer1: 'Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.',
   question2: 'Проводятся ли в клубе какие-либо мероприятия или соревнования?',
   answer2: 'Да, и довольно часто',
   question3: 'Можно ли приобрести в центре спортивное питание?',
   answer3: 'У нас его очень много, на любой цвет и вкус',
   question4: 'Есть ли в центре детская комната?',
   answer4: 'Да, также в детской комнате постоянно дежурит няня.',
-}
+};
 
 const rules = {
   question1: 'Есть в фитнес-центре дресс-код?',
@@ -43,7 +43,7 @@ const rules = {
   answer3: 'Специальных дополнитеьных правил нет.',
   question4: 'Нужна ли медицинская справка для посещения залов и бассейна?',
   answer4: 'Справка нужна. Однако, если ее у вас нет, то можете ее получить у нашего врача за дополнительную плату.',
-}
+};
 
 const updateValues = (value) => {
   accordions[0].querySelector('h3').textContent = `${value.question1}`;
@@ -54,11 +54,11 @@ const updateValues = (value) => {
   accordions[2].querySelector('p').textContent = `${value.answer3}`;
   accordions[3].querySelector('h3').textContent = `${value.question4}`;
   accordions[3].querySelector('p').textContent = `${value.answer4}`;
-}
+};
 
-for (let tab of tabs) {
+for (const tab of tabs) {
   tab.addEventListener('click', ()=> {
-    tabs.forEach(item => item.classList.remove('tabs__button--current'));
+    tabs.forEach((item) => item.classList.remove('tabs__button--current'));
     tab.classList.add('tabs__button--current');
 
     if (tab.classList.contains('tabs__button--center')) {
@@ -70,15 +70,15 @@ for (let tab of tabs) {
     } else if (tab.classList.contains('tabs__button--rules')) {
       updateValues(rules);
     }
-  })
+  });
 }
 
 const accordionButtons = document.querySelectorAll('.accordions__button ');
 
-for (let accordionButton of accordionButtons) {
+for (const accordionButton of accordionButtons) {
   accordionButton.addEventListener('click', ()=> {
     accordionButton.classList.toggle('accordions__button--active');
     const element = accordionButton.parentNode.parentNode;
     element.classList.toggle('accordions__item--active');
-  })
+  });
 }

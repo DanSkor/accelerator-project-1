@@ -67,3 +67,19 @@
     fill: $dark;
   }
 }
+
+.social__link--vk svg {
+  @media (min-width: $tablet) {
+    transform: translateY(1px);
+  }
+}
+
+.social__link--rd svg {
+  @media (min-width: $tablet) {
+    transform: translateY(-1px);
+  }
+
+  @media (min-width: $desctop) {
+    transform: translateY(0);
+  }
+}

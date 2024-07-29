@@ -3,13 +3,6 @@
   color: #ffffff;
 }
 
-.form__contacts {
-  @media (min-width: $desctop) {
-    display: grid;
-    grid-template-columns: 683px 683px;
-  }
-}
-
 .form__wrapper {
   margin: 0 auto;
   padding: 70px 15px;
@@ -19,12 +12,12 @@
   }
 
   @media (min-width: $desctop) {
-    padding: 60px 103px;
+    padding: 61px 103px 59px;
   }
 }
 
 .form__title {
-  margin: 0 0 36px;
+  margin: 0 0 35px;
 
   @media (min-width: $tablet) {
     font-size: 54px;
@@ -61,12 +54,14 @@
   background-color: transparent;
   border: 1px solid transparent;
   border-bottom: 1px solid $divider;
-  padding: 0 10px 3px 4px;
+  padding: 0 10px 3px 0;
   transition: all 0.2s ease;
 
   &::placeholder {
     font-family: $roboto-condensed-light;
     font-weight: 300;
+    font-size: 14px;
+    line-height: 157%;
     opacity: 0.4;
   }
 
@@ -114,7 +109,10 @@
 }
 
 .form__button {
+  // margin-top: 2px;
+
   @media (min-width: $tablet) {
+    margin-top: 0;
     grid-column: 1/3;
   }
 }

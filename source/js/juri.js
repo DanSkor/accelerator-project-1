@@ -24,4 +24,6 @@ const swiper = new Swiper('.juri__slider-wrapper', {
   }
 });
 
+swiper.update();
+
 document.querySelector('.juri').querySelector('.swiper-wrapper').style.height = '300px';

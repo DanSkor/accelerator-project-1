@@ -12,6 +12,7 @@
   }
 
   @media (min-width: $desctop) {
+    max-width: 1366px;
     padding: 0 103px;
   }
 }
@@ -48,12 +49,14 @@
     justify-content: space-between;
     grid-template-columns: 113px 185px;
     row-gap: 50px;
+    margin-top: -1px;
   }
 
   @media (min-width: $desctop) {
     grid-template-columns: 115px 270px;
     justify-content: end;
     row-gap: 35px;
+    margin-top: 0;
   }
 }
 
@@ -74,17 +77,13 @@
     align-self: center;
     font-size: 14px;
     line-height: 157%;
-    margin: 0 0 0 -2px;
+    margin: 1px 0 0 -2px;
   }
 
   @media (min-width: $desctop) {
     justify-self: end;
     margin: -4px 0 0;
   }
-}
-
-.hero__content-item {
-  width: max-content;
 }
 
 .hero__button {
@@ -171,9 +170,11 @@
 
   @media (min-width: $tablet) {
     display: block;
+    margin-top: 1px;
   }
 
   @media (min-width: $tablet) {
-    transform: translateY(-3px);
+    transform: translateY(-1px);
+    margin-top: 0;
   }
 }

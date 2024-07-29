@@ -5,14 +5,15 @@
   @media (min-width: $tablet) {
     position: relative;
     text-align: center;
-    padding: 60px 45px 120px;
+    padding: 61px 45px 120px;
   }
 
   @media (min-width: $desctop) {
+    max-width: 1366px;
     display: flex;
     gap: 145px;
     text-align: start;
-    padding: 118px 103px 240px;
+    padding: 120px 103px 240px;
   }
 }
 
@@ -47,6 +48,7 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 100%;
+    margin: 0 0 35px;
   }
 
   @media (min-width: $desctop) {
@@ -55,7 +57,7 @@
   }
 }
 
-.about__desc {
+.about__text-block p:nth-child(3) {
   margin: 0 0 36px;
 
   @media (min-width: $tablet) {
@@ -69,7 +71,7 @@
   }
 }
 
-.about__desc-extra {
+.about__text-block p:nth-child(4) {
   display: none;
   margin: 8px 0 0;
 

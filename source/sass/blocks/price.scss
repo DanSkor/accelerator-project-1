@@ -23,7 +23,7 @@
         url("../../img/plates-desc@1x.png") type("image/png") 1x,
         url("../../img/plates-desc@2x.png") type("image/png") 2x
       );
-    background-position: bottom -68px right -167px;
+    background-position: bottom -48px right -167px;
   }
 }
 
@@ -32,10 +32,11 @@
   padding: 40px 15px;
 
   @media (min-width: $tablet) {
-    padding: 60px 45px;
+    padding: 62px 45px 58px;
   }
 
   @media (min-width: $desctop) {
+    max-width: 1366px;
     padding: 80px 103px 102px;
   }
 }
@@ -48,7 +49,7 @@
   }
 
   @media (min-width: $desctop) {
-    margin: 20px;
+    margin: 20px 0 21px;
   }
 }
 
@@ -165,30 +166,6 @@
   }
 }
 
-// .price__item--current {
-//   position: relative;
-
-  // &::after {
-  //   position: absolute;
-  //   content: "";
-  //   left: 0;
-  //   bottom: -2px;
-  //   height: 2px;
-  //   width: 100%;
-  //   background-color: #d10a42;
-  // }
-
-  // @media (min-width: $desctop) {
-    // &::after {
-    //   bottom: -5px;
-    // }
-//   }
-// }
-
-// .price__item--current .price__button {
-//   color: #102654;
-// }
-
 .price__card-list {
   display: flex;
   align-items: center;
@@ -204,6 +181,7 @@
 
   @media (min-width: $desctop) {
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }

@@ -1,0 +1,7 @@
+.form-contacts {
+  @media (min-width: $desctop) {
+    display: grid;
+    grid-template-columns: 683px 683px;
+    justify-content: center;
+  }
+}

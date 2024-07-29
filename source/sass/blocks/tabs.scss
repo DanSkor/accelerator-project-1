@@ -47,7 +47,7 @@
   }
 
   &--current {
-    padding: 15px;
+    padding: 16px 15px 14px;
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     color: #ffffff;
     border: none;
@@ -64,6 +64,14 @@
 
     &--current {
       padding: 18px;
+    }
+  }
+
+  @media (min-width: $desctop) {
+    padding: 18px 0 16px;
+
+    &--current {
+      padding: 19px 0 17px;
     }
   }
 }

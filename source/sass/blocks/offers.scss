@@ -15,6 +15,7 @@
   }
 
   @media (min-width: $desctop) {
+    max-width: 1366px;
     padding: 100px 103px;
   }
 }
@@ -47,33 +48,41 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet) {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 278px 400px;
     margin-bottom: 35px;
   }
 
   @media (min-width: $desctop) {
+    grid-template-columns: 280px 280px;
     margin-bottom: 0;
   }
 }
 
 .offers__main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   box-sizing: border-box;
   background-color: $play-btn;
   color: #ffffff;
   min-height: 271px;
-  padding: 30px;
+  padding: 29px 30px 31px;
 
   @media (min-width: $tablet) {
+    align-items: flex-start;
+    gap: 133px;
     width: 278px;
     position: relative;
     min-height: 402px;
-    padding: 40px 25px;
+    padding: 40px 25px 45px;
   }
 
   @media (min-width: $desctop) {
+    gap: 130px;
     width: 280px;
     min-height: 400px;
-    padding: 40px 45px;
+    padding: 40px 45px 44px;
   }
 }
 
@@ -82,7 +91,7 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 100%;
-  margin: 0 0 9px;
+  margin: 1px 0 10px;
 
   @media (min-width: $tablet) {
     font-size: 24px;
@@ -100,7 +109,7 @@
   font-weight: 700;
   font-size: 64px;
   line-height: 100%;
-  margin: 0 0 28px;
+  margin: -1px 0 28px;
 
   @media (min-width: $tablet) {
     font-size: 70px;
@@ -111,7 +120,7 @@
 .offers__main-content p {
   font-size: 16px;
   line-height: 125%;
-  margin: 0 0 24px;
+  margin: 0 0 25px;
 
   @media (min-width: $tablet) {
     font-size: 18px;
@@ -122,18 +131,36 @@
 }
 
 .offers__image {
-  display: block;
-}
+  width: 320px;
+  height: 360px;
+  background:
+    image-set(
+      url("../../img/offers-mob@1x.webp") type("image/webp") 1x,
+      url("../../img/offers-mob@2x.webp") type("image/webp") 2x,
+      url("../../img/offers-mob@1x.jpg") type("image/jpg") 1x,
+      url("../../img/offers-mob@2x.jpg") type("image/jpg") 2x
+    );
 
-.offers__main-link {
   @media (min-width: $tablet) {
-    position: absolute;
-    bottom: 45px;
-    left: 25px;
+    width: auto;
+    height: auto;
+    background:
+      image-set(
+        url("../../img/offers-tab@1x.webp") type("image/webp") 1x,
+        url("../../img/offers-tab@2x.webp") type("image/webp") 2x,
+        url("../../img/offers-tab@1x.jpg") type("image/jpg") 1x,
+        url("../../img/offers-tab@2x.jpg") type("image/jpg") 2x
+      );
   }
 
   @media (min-width: $desctop) {
-    left: 45px;
+    background:
+      image-set(
+        url("../../img/offers-desc@1x.webp") type("image/webp") 1x,
+        url("../../img/offers-desc@2x.webp") type("image/webp") 2x,
+        url("../../img/offers-desc@1x.jpg") type("image/jpg") 1x,
+        url("../../img/offers-desc@2x.jpg") type("image/jpg") 2x
+      );
   }
 }
 
@@ -148,6 +175,7 @@
 
   @media (min-width: $tablet) {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 0;
   }
@@ -158,8 +186,12 @@
 }
 
 .offers__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
   position: relative;
-  padding: 20px 20px 22px;
+  padding: 21px 20px;
   border: 7px solid transparent;
   background-color: #ffffff;
   background-clip: padding-box;
@@ -177,12 +209,16 @@
   }
 
   @media (min-width: $tablet) {
+    align-items: flex-start;
+    box-sizing: border-box;
+    gap: 30px;
     position: relative;
     width: 324px;
+    padding: 21px 20px 26px;
   }
 
   @media (min-width: $desctop) {
-    padding: 20px 20px 40px;
+    gap: 40px;
     width: auto;
   }
 }
@@ -196,28 +232,15 @@
 
   @media (min-width: $tablet) {
     font-size: 26px;
-    margin: 0 0 10px;
+    margin: 0 0 9px;
   }
 }
 
 .offers__item p {
-  margin: 0 0 16px;
+  margin: 0;
 
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 150%;
-    margin: 0 0 48px;
-  }
-
-  @media (min-width: $desctop) {
-    margin: 0 0 40px;
-  }
-}
-
-.offers__item-link {
-  @media (min-width: $tablet) {
-    position: absolute;
-    left: 20px;
-    bottom: 25px;
   }
 }

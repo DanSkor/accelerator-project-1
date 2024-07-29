@@ -39,6 +39,7 @@
   0% {
     color: #102654;
     opacity: 1;
+    height: auto;
   }
 
   50% {
@@ -64,7 +65,7 @@
 }
 
 .accordions__item {
-  padding: 20px 0;
+  padding: 21px 0 19px;
   border-top: 1px solid $divider;
 
   &:last-child {
@@ -76,7 +77,7 @@
   }
 
   @media (min-width: $desctop) {
-    padding: 22px 0 23px;
+    padding: 23px 0 22px;
   }
 }
 
@@ -118,8 +119,6 @@
   line-height: 125%;
   animation: close-answer 0.6s ease;
   transition: all 0.6s ease;
-  // margin: 19px 0 1px;
-
   height: 0;
   color: transparent;
   margin: 0;

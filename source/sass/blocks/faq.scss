@@ -3,7 +3,7 @@
 }
 
 .faq__wrapper {
-  padding: 70px 15px;
+  padding: 71px 15px;
   margin: 0 auto;
 
   @media (min-width: $tablet) {
@@ -11,13 +11,14 @@
   }
 
   @media (min-width: $desctop) {
-    padding: 100px 103px;
+    max-width: 1366px;
+    padding: 101px 103px 99px;
   }
 }
 
 .faq__title {
   text-align: center;
-  margin: 0 0 35px;
+  margin: 0 0 34px;
 
   @media (min-width: $tablet) {
     margin: 0 0 45px;
@@ -25,7 +26,7 @@
 
   @media (min-width: $desctop) {
     text-align: start;
-    margin: 0 0 50px;
+    margin: 0 0 49px;
   }
 }
 
